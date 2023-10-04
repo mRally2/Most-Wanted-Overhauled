@@ -82,14 +82,14 @@
       <li>Change the reward SP of each career event</li>
       <li>Figure out a better career economy to make it even more interesting progressing through</li>
       <li>Increase the durability of the AI vehicles in a more sensible manner</li>
-      <li>Tweak and randomize the environment parameters to give it more visual variety</li>
+      <li>Tweak and randomize the environment lighting parameters to provide even more visual variety</li>
       <li>Solve the softlock that happens when you lose all the health from your car in a SWAT roadblock on a lower heat level</li>
       <li>Implement various difficulty levels for both racer and cop AI</li>
-      <li>Create a database to be able to randomize the racer AI</li>
+      <li>Create a database to be able to randomize the racer AI in events</li>
       <li>Make a good port of the SCPD Reventón from HP10 and add it to the heat 5 and 6 chases as interceptor</li>
       <li>Tweak the parameters of the cop AI to make it smarter and not just more aggressive</li>
       <li>Make a complete overhaul of the in-game UI to modernize it</li>
-      <li>Reinflate after certain amount of time the racer AI tires when they go over spikes to not break the competition</li>
+      <li>Reinflate after certain amount of time the racer AI tires when they go over spikes to avoid slowing them down for too long</li>
    </ul>
    <p><br></p>
    <p><strong>DISCLAIMER</strong></p>
