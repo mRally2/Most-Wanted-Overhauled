@@ -2,7 +2,18 @@
 <div class="rich-text">
    <p><strong>DESCRIPTION</strong></p>
    <hr>
-   <p>This tool lets you experience the game like never before. Drive Tier 5 and Tier 6 cars throughout the entire story against AI of the same caliber. The Mob is no longer your only enemy, you will battle against high-performance vehicles from the very beginning. Will you be able to keep up the pace and win The Run? Only one way to find out...</p>
+   <p>You are in front of possibly the most ambitious mod has ever been made for this game. What happend to be a simple and small hack to disable the brake to drift mechanics turned out as a huge gameplay overhaul.
+      
+Having a new handling model based on grip instead provides a way more natural feel to all cars that have been tuned originally by the old Criterion team with care and detail. Not to mention the great game engine Chameleon is which made it way ahead of its time. Driving in this game is so smooth the map becomes too small at times.
+
+The physics were massively improved since their previous title, Hot Pursuit 2010. Looking at the footage of previous builds you could see them trying to convert the brake to drift model they had into grip but resulted in being harsh and not enjoyable to drive. Many months later into development they updated their physics code making it much more complex which you can now have a glimps with the changes I made and appreciate how good it is. It looks as if it was straight out of a more serious racing title which was in fact my goal.
+
+The majority of changes that have been done to accomplish this grip model are related to the steering components and a few to the handbrake behavior. It’s also worth mentioning the fact they gave each car by default a low steering rate at high speeds with no apparent reason which creates the feeling of having a huge imput lag. This mod solves this issue increasing this value by almost 5 times.
+
+The handbrake has also quite a big part in making this model shine. It has been tuned to be enabled shortly to trigger the drift component Criterion programmed for smooth transitions and manouvrability through tight corners and also has been set to decrease the speed of the vehicle during the powerslide instead of the other way around used for the vanilla drift model.
+
+
+</p>
    <p><br></p>
    <p><strong>FEATURES</strong></p>
    <hr>
