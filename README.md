@@ -2,7 +2,7 @@
 <div class="rich-text">
    <p><strong>DESCRIPTION</strong></p>
    <hr>
-   <p>You are in front of possibly the most ambitious mod has ever been made for this game. What happend to be a simple and small hack to disable the brake to drift mechanics turned out as a huge gameplay overhaul.
+   <p align="justify">You are in front of possibly the most ambitious mod has ever been made for this game. What happend to be a simple and small hack to disable the brake to drift mechanics turned out as a huge gameplay overhaul.
       
 Having a new handling model based on grip instead provides a way more natural feel to all cars that have been tuned originally by the old Criterion team with care and detail. Not to mention the great game engine Chameleon is which made it way ahead of its time. Driving in this game is so smooth the map becomes too small at times. It’s hugely recommended to drive without upgrades other than nitrous to notice and appreciate the distict aspects of each vehicle in particular.
 
