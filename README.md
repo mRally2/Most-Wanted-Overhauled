@@ -7,25 +7,27 @@
    <p><strong>FEATURES</strong></p>
    <hr>
    <ul>
-      <li>Introducing a handling model based on grip with a functional handbrake providing smooth powerslides</li>
-      <li>Brand new bounty requirements for MW racers</li>
-      <li>Getting busted now decreses your total SB bounty</li>
+      <li>Introducing a handling model based on grip racing with a functional handbrake providing smooth powerslides</li>
+      <li>Brand new bounty requirements for MW racers to improve the sense of progression</li>
+      <li>Getting busted now decreses your total SP bounty</li>
       <li>Introducing a functional vehicle health damage system giving cop chases an edge</li>
       <li>Bumpers and fenders will fall off when damaged severely</li>
       <li>Both racer and cop AI will become vulnerable to spike strips</li>
-      <li>New driving behavior when running over rims providing a more profound sense of damage</li>
-      <li>Gas stations will be available to be used for repair every 5 minutes</li>
+      <li>New driving behavior when running over rims after spiked providing a more profound sense of damage</li>
+      <li>Gas stations will be open every 5 minutes for use so the new damage system can have more importance aswell as finding a cooldown spot</li>
       <li>Both racer and cop AI have been massively improved being much faster and aggressive</li>
-      <li>Roadblock randomizer</li>
-      <li>A more intense and thrill busting behaviour</li>
+      <li>Both racer and cop AI are also much tougher only being able to be taken down 1/3 of the times</li>
+      <li>Police pursuits are now harder due to the much higher speed cops can drive at any heat level, their increased spawn, radar range and backup units</li>
+      <li>A roadblock randomizer which includes some of the few roadblocks that were cut</li>
+      <li>A more intense and thrilling busting behaviour which enforces you to act quick to escape</li>
       <li>Paint of every cop car has been changed to metallic black and glossy white</li>
       <li>An image colour filter randomizer to provide more variety over many hours of playtime</li>
-      <li>A weather effect randomizer introducing unused features as Alteranatiive, Rainy or Thunder</li>
-      <li>2 brand new close cam presets</li>
+      <li>A weather effect randomizer introducing cut features such as Alternative lighting, Rainy mood or Thunder effect</li>
+      <li>Two brand new close cam presets</li>
       <li>A functional speedbreaker changing the in-game time to half</li>
-      <li>A vehicle lights toggle</li>
-      <li>A main paint freezer that prevents the colour of the vehicle to change</li>
-      <li>A paint stealer that can freeze the values of one vehicle</li>
+      <li>A vehicle lights toggle which gives you total control of them</li>
+      <li>A main paint freezer that prevents the colour of the vehicle to change when going through gas stations</li>
+      <li>A paint stealer that can freeze the values of one vehicle and write them into another</li>
       <li>Enhanced vehicle engine sounds</li>
    </ul>
    <p><br></p>
@@ -45,6 +47,7 @@
       <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/2694"><em>HD Effects</em></a></li>
       <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/3416"><em>Remastered Textures</em></a></li>
       <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/4313"><em>Post-Processing FX Tweaker</em></a></li>
+      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://community.pcgamingwiki.com/files/file/2766-nfs-most-wanted-2012-realistic-plugin-v402/"><em>Realistic Plugin</em></a></li>
       <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/3971"><em>Races Added for Hidden Cars</em></a></li>
       <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/4248"><em>PhotoMode</em></a></li>
       <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/3551"><em>Beta License Plate</em></a></li>
@@ -53,11 +56,15 @@
    <p><strong>KNOWN ISSUES</strong></p>
    <hr>
    <ul>
-      <li>The replacement of the string "PRESS ENTER (TO BEGIN)" works only if you launch the game with keyboard controls</li>
-      <li>Some customization parts might not look right due to the default position set for the original vehicles they were meant for</li>
-      <li>Some events might not be possible to complete if chosen a lower-performance vehicle and the AI was given very high-performance ones or if you went to the gas station for a hot-swap</li>
-      <li>If a vehicle is not customized then it might’ve been Cheat Engine omitting its particular script. Restart both, the game and the trainer</li>
-      <li>Because of how Cheat Engine trainers work, if you close its window you will still have all scripts that got enabled in the first place. In order to disable them all, you must do it manually by killing all instances of the trainer in the Task Manager<br></li>
+      <li>There’s a very low chance of getting softlocked after the busting process is over if you lose all health by hitting a SWAT van roadblock. Start a MW race to get out of it.</li>
+      <li>The vehicle’s body trembling when full steering into the corner. Might have to do with the spring simulation</li>
+      <li>The car making a weird turn when using the handbrake at very high speeds. It’s rather intended to be used at lower speeds for quick 90 degrees turns, keep it in mind.</li>
+      <li>The rims twitching even when the car is stopped after being spiked</li>
+      <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
+      <li>Some races might be too easy or too hard. Don’t expect to finish first all the time, just enjoy the challenge.</li>
+      <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
+      <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
+      <li>Because of how Cheat Engine trainers work, if you close its window you will still have all scripts that got enabled in the first place. In order to disable them all, you must do it manually by killing all instances of the trainer in the Task Manager</li>
    </ul>
    <p><br></p>
    <p><strong>FUTURE UPDATES</strong></p>
