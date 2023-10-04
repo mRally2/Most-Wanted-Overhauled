@@ -22,7 +22,8 @@ There’s a PostFX filter and Weather effect randomizer included as well. The fi
 
 Lastly, a functional speedbreaker reminiscent of the original Most Wanted title and which was also planned to be released as a regular weapon alongside many others that were cut has been added. Use it wisely at your own free will.
 
-<strong>[ RELEASE DATE: UNDECIDED, DEPENDS ON THE DEMAND AND SUPPORT ]</strong>
+
+<center><strong>[ RELEASE DATE: UNDECIDED, DEPENDS ON THE DEMAND AND SUPPORT ]</strong></center>
 </p>
    <p><br></p>
    <p><strong>FEATURES</strong></p>
