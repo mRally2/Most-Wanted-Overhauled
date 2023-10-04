@@ -55,35 +55,35 @@
    <p><strong>FUTURE UPDATES</strong></p>
    <hr>
    <ul>
-      <li>Full Frosty Editor and Mod Manager support for The Run</li>
-      <li>Disable all vehicle assists only for the player for a more pleasant driving experience. It crashes the game if AI has no assists during gameplay</li>
-      <li>Design an algorithm to force VisEnvs from other levels if an event has been restarted once or more in a row. Ideal for bringing variety to multiplayer</li>
-      <li>Replace low quality texture assets with higher quality ones</li>
-      <li>Add events that take place in the same Game.Level as SubLevels to avoid loading screens</li>
-      <li>Replace the background images and videos with higher quality versions</li>
-      <li>Replace the soundtrack of the game</li>
-      <li>Fix the vehicles’ model rendering to look as high detail as possible</li>
-      <li>Fix the low quality vehicle liveries when outside of the FrontEnd garage</li>
-      <li>Add VisEnv templates from other Game.Levels to be able to use them easily when instancing the events</li>
-      <li>Figure out how to spawn the unused roadblock and helicopter assets in challenge series events 10.5, 11.3 and 13.7</li>
-      <li>Create new Challenge Series events</li>
-      <li>Add manually customized vehicles to the car roster via Frosty Editor and VLT</li>
-      <li>Make the VLT data be fully readable and customizable</li>
-      <li>Extract the lua scripts embedded into the executable</li>
-      <li>Add new content and improve if possible all my trainer prototypes</li>
-      <li>Make new Story Mode versions of my mods. Play the entire career with a certain tier. From tier 1 to 6. Adapt checkpoint timer, opponent rubberband and career difficulty on the fly depending on the event or vehicle tier chosen</li>
-      <li>Change the order of the Story Mode cutscenes. Start The Run with the Chinese Restaurant meeting and insert the Car Crusher Escape in-between the New Jersey Sprint and DeLeon Rival Race of Stage 10</li>
-      <li>Fix the game crashing during gameplay and after crossing the finish line</li>
+      <li>Display in-real-time the health of your vehicle and the availability of the gas station repairs on the HUD</li>
+      <li>Make other vehicle parts to fall over</li>
+      <li>Find out why the cop SRT8 swapped with the SWAT van can bust you if the crash impact is severe</li>
+      <li>Find out why the spikes can bust you when put a very high value</li>
+      <li>Tweak the AI racers and cops to increase their keep up abilities with less rubberband involved</li>
+      <li>Find out which close cam value changes the FOV of the image when turning at high speeds</li>
+      <li>Tweak the vehicle performance to make the overall driving smoother</li>
+      <li>Implement for the player an exclusive EMP weapon to use against the cops taking as a basis the leftover invisible spikes</li>
+      <li>Implement a randomizer that changes the items and their positions so roadblocks get more variety</li>
+      <li>Change the reward SP of each career event</li>
+      <li>Figure out a better career economy to make it even more interesting progressing through</li>
+      <li>Increase the durability of the AI vehicles in a more sensible manner</li>
+      <li>Tweak and randomize the environment parameters to give it more visual variety</li>
+      <li>Solve the softlock that happens when you lose all the health from your car in a SWAT roadblock on a lower heat level</li>
+      <li>Implement various difficulty levels for both racer and cop AI</li>
+      <li>Create a database to be able to randomize the racer AI</li>
+      <li>Make a good port of the SCPD Reventón from HP10 and add it to the heat 5 and 6 chases as interceptor</li>
+      <li>Tweak the parameters of the cop AI to make it smarter and not just more aggressive</li>
+      <li>Make a complete overhaul of the in-game UI to modernize it</li>
+      <li>Reinflate after certain amount of time the racer AI tires when they go over spikes to not break the competition</li>
    </ul>
    <p><br></p>
    <p><strong>DISCLAIMER</strong></p>
    <hr>
    <ul>
       <li>This take of the game is thought of as an alternative to the original story mode. If you have never played it before then I suggest you do that first since the speed and complexity you are facing in this version might discourage you to continue playing</li>
-      <li>Cheat table containing the source code which the trainer has been built with is available inside the Code folder</li>
       <li>By using any piece of code code shared here you agree to credit the respective author once your mod or tool gets released to the public</li>
       <li>You are allowed to repost or reference this mod in any modding website that hasn’t been published on yet if and only if you follow the same design and structure used here</li>
-      <li>Your antivirus might detect it as a threat. It’s a false positive. The tool has been built using a custom compiled version of Cheat Engine 7.3</li>
+      <li>Your antivirus might detect it as a threat. It’s a false positive. The tool has been built using a custom compiled version of Cheat Engine 7.5</li>
       <li>I am not responsible for any damage caused to your system by this tool so use it at your own risk</li>
       <li>I do not own the rights of the art shown on the cover and thumbnail of this product. It’s a fan art for illustrating the purpose of the product itself. All rights reserved to Electronic Arts Inc.</li>
    </ul>
