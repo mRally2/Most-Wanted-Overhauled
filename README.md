@@ -12,7 +12,7 @@ The majority of changes that have been done to accomplish this grip model are re
 
 Handbrake has also quite a big part in making this model shine. It has been tuned to be enabled shortly to trigger the drift component Criterion programmed for smooth transitions and manouvrability through tight corners and also has been set to decrease the speed of the vehicle during the powerslide instead of the other way around used for the vanilla drift model. This way gripping and drifting through a corner will not have much difference in speed.
 
-As a personal opinion, I wish they kept this physics code for much longer than 2 titles. Rivals was the last game to use it which also brings the fact that with very few changes you can also turn its handling model into grip. This is probably the last good physics code NFS will have for a long time...
+As a personal opinion, I wish they kept this physics code for much longer than 2 titles. Rivals was the last game to use it mostly because Criterion was the one starting its development which also brings the fact that with very few changes you can turn its handling model into a grip one with quite good results. This is probably the last good physics code NFS will have for a long time...
 
 Vehicle health now has a huge importance in gameplay making you look after it each pursuit you engage. Get your car wrecked and you will not only get busted but get SP subtracted from your total amount too so watch out. When having less than 50% of health, a red outskirt corona will fade in and out depending on the severity of the damage to indicate you to survive and look for the closest gas station available to repair your ride.
 
