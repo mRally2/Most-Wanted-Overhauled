@@ -4,15 +4,21 @@
    <hr>
    <p>You are in front of possibly the most ambitious mod has ever been made for this game. What happend to be a simple and small hack to disable the brake to drift mechanics turned out as a huge gameplay overhaul.
       
-Having a new handling model based on grip instead provides a way more natural feel to all cars that have been tuned originally by the old Criterion team with care and detail. Not to mention the great game engine Chameleon is which made it way ahead of its time. Driving in this game is so smooth the map becomes too small at times.
+Having a new handling model based on grip instead provides a way more natural feel to all cars that have been tuned originally by the old Criterion team with care and detail. Not to mention the great game engine Chameleon is which made it way ahead of its time. Driving in this game is so smooth the map becomes too small at times. It’s hugely recommended to drive without upgrades other than nitrous to notice and appreciate the distict aspects of each vehicle in particular.
 
-The physics were massively improved since their previous title, Hot Pursuit 2010. Looking at the footage of previous builds you could see them trying to convert the brake to drift model they had into grip but resulted in being harsh and not enjoyable to drive. Many months later into development they updated their physics code making it much more complex which you can now have a glimps with the changes I made and appreciate how good it is. It looks as if it was straight out of a more serious racing title which was in fact my goal.
+Physics were massively improved since their previous title, Hot Pursuit 2010. Looking at the footage of previous builds you could see them trying to convert the brake to drift model they had into grip but resulted in being harsh and not enjoyable to drive. Many months later into development they updated their physics code making it much more complex which you can now have a glimps with the changes I made and appreciate how good it is. It looks as if it was straight out of a more serious racing title which was in fact my goal.
 
 The majority of changes that have been done to accomplish this grip model are related to the steering components and a few to the handbrake behavior. It’s also worth mentioning the fact they gave each car by default a low steering rate at high speeds with no apparent reason which creates the feeling of having a huge imput lag. This mod solves this issue increasing this value by almost 5 times.
 
-The handbrake has also quite a big part in making this model shine. It has been tuned to be enabled shortly to trigger the drift component Criterion programmed for smooth transitions and manouvrability through tight corners and also has been set to decrease the speed of the vehicle during the powerslide instead of the other way around used for the vanilla drift model.
+Handbrake has also quite a big part in making this model shine. It has been tuned to be enabled shortly to trigger the drift component Criterion programmed for smooth transitions and manouvrability through tight corners and also has been set to decrease the speed of the vehicle during the powerslide instead of the other way around used for the vanilla drift model.
 
+Vehicle health now has a huge importance in gameplay making you look after it each pursuit you engage. Get your car wrecked and you will not only get busted but get SP subtracted from your total amount too so watch out. When having less than 50% of health, a red outskirt corona will fade in and out depending on the severity of the damage to indicate you to survive and look for the closest gas station available to repair your ride.
 
+The overall pursuit system have become much harder. This time the FCPD will enter into Hot Pursuit mode and go full force on you no matter the heat level. Good luck keeping your vehicle on the road for as long as possible. Use all your driving skills to shake them off.
+
+There’s a PostFX filter and Weather effect randomizer included as well. The first randomizes the RGB values from 1.0 to 0.75 in order to provide slight changes in environment colouring while the latter will randomize between having or not the following effects: wet roads, alternative lighting, rainy mood and thunder effect. The last two of these have not been used originally and the alternative lighting is almost impossible to trigger by instancing events since almost no one has it enabled.
+
+Lastly, a functional speedbreaker reminiscent of the original Most Wanted title and which was also planned to be released as a regular weapon alongside many others that were cut has been added. Use it wisely at your own free will.
 </p>
    <p><br></p>
    <p><strong>FEATURES</strong></p>
@@ -34,7 +40,7 @@ The handbrake has also quite a big part in making this model shine. It has been 
       <li>Paint of every cop car has been changed to metallic black and glossy white</li>
       <li>An image colour filter randomizer to provide more variety over many hours of playtime</li>
       <li>A weather effect randomizer introducing cut features such as Alternative lighting, Rainy mood or Thunder effect</li>
-      <li>Two brand new close cam presets</li>
+      <li>Two brand new close cam presets throught out for racing</li>
       <li>A functional speedbreaker changing the in-game time to half</li>
       <li>A vehicle lights toggle which gives you total control of them</li>
       <li>A main paint freezer that prevents the colour of the vehicle to change when going through gas stations</li>
@@ -67,6 +73,7 @@ The handbrake has also quite a big part in making this model shine. It has been 
    <p><strong>KNOWN ISSUES</strong></p>
    <hr>
    <ul>
+      <li>Enabling any of the two new cam presets before the Vantage S entry cutscene of WELCOME TO FAIRHAVEN will softlock the game later on when trying to switch to the Carrera S</li>
       <li>There’s a very low chance of getting softlocked after the busting process is over if you lose all health by hitting a SWAT van roadblock. Start a MW race to get out of it</li>
       <li>The vehicle’s body trembling when full steering into the corner. Might have to do with the spring simulation</li>
       <li>The car making a weird turn when using the handbrake at very high speeds. It’s rather intended to be used at lower speeds for quick 90 degree turns, keep it in mind</li>
