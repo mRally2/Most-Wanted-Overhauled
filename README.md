@@ -21,9 +21,9 @@ The overall pursuit system have become much harder. This time the FCPD will ente
 There’s a PostFX filter and Weather effect randomizer included as well. The first randomizes the RGB values from 1.0 to 0.75 in order to provide slight changes in environment colouring while the latter will randomize between having or not the following effects: wet roads, alternative lighting, rainy mood and thunder effect. The last two of these have not been used originally and the alternative lighting is almost impossible to trigger by instancing events since almost no one has it enabled.
 
 Lastly, a functional speedbreaker reminiscent of the original Most Wanted title and which was also planned to be released as a regular weapon alongside many others that were cut has been added. Use it wisely at your own free will.
-</p>
-<p style="text-align:center"><strong>[ RELEASE DATE: UNDECIDED, DEPENDS ON THE DEMAND AND SUPPORT ]</strong></p>
 
+<strong>[ RELEASE DATE: UNDECIDED, DEPENDS ON THE DEMAND AND SUPPORT ]</strong>
+</p>
    <p><br></p>
    <p><strong>FEATURES</strong></p>
    <hr>
