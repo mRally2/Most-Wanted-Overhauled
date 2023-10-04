@@ -56,12 +56,12 @@
    <p><strong>KNOWN ISSUES</strong></p>
    <hr>
    <ul>
-      <li>There’s a very low chance of getting softlocked after the busting process is over if you lose all health by hitting a SWAT van roadblock. Start a MW race to get out of it.</li>
+      <li>There’s a very low chance of getting softlocked after the busting process is over if you lose all health by hitting a SWAT van roadblock. Start a MW race to get out of it</li>
       <li>The vehicle’s body trembling when full steering into the corner. Might have to do with the spring simulation</li>
-      <li>The car making a weird turn when using the handbrake at very high speeds. It’s rather intended to be used at lower speeds for quick 90 degrees turns, keep it in mind.</li>
+      <li>The car making a weird turn when using the handbrake at very high speeds. It’s rather intended to be used at lower speeds for quick 90 degree turns, keep it in mind</li>
       <li>The rims twitching even when the car is stopped after being spiked</li>
       <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
-      <li>Some races might be too easy or too hard. Don’t expect to finish first all the time, just enjoy the challenge.</li>
+      <li>Some races might be too easy or too hard. Don’t expect to finish first all the time</li>
       <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
       <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
       <li>Because of how Cheat Engine trainers work, if you close its window you will still have all scripts that got enabled in the first place. In order to disable them all, you must do it manually by killing all instances of the trainer in the Task Manager</li>
