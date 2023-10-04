@@ -14,7 +14,7 @@ Handbrake has also quite a big part in making this model shine. It has been tune
 
 As a personal opinion, I wish they kept this physics code for much longer than 2 titles. Rivals was the last game to use it mostly because Criterion was the one starting its development which also brings the fact that with very few changes you can turn its handling model into a grip one with quite good results. This is probably the last good physics code NFS will have for a long time...
 
-Vehicle health now has a huge importance in gameplay making you look after it each pursuit you engage. Get your car wrecked and you will not only get busted but get SP subtracted from your total amount too so watch out. When having less than 50% of health, a red outskirt corona will fade in and out depending on the severity of the damage to indicate you to survive and look for the closest gas station available to repair your ride.
+Vehicle health now has a huge importance in gameplay making you look after it each pursuit you engage. Get your car wrecked and you will not only get busted but get SP subtracted from your total amount too so watch out. When having less than 50% of health, a red aura surrounding the car on screen will fade in and out depending on the severity of the damage to indicate you to survive and look for the closest gas station available to repair your ride.
 
 The overall pursuit system have become much harder. This time the FCPD will enter into Hot Pursuit mode and go full force on you no matter the heat level. Good luck keeping your vehicle on the road for as long as possible. Use all your driving skills to shake them off.
 
