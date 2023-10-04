@@ -78,8 +78,10 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <hr>
    <ul>
       <li>Enabling any of the two new cam presets before the Vantage S entry cutscene of WELCOME TO FAIRHAVEN will softlock the game later on when trying to switch to the Carrera S</li>
+      <li>Some opening cutscenes might be broken due to the usage of the new parameters for the grip handling model</li>
       <li>There’s a very low chance of getting softlocked after the busting process is over if you lose all health by hitting a SWAT van roadblock. Start a MW race to get out of it</li>
       <li>Rear wheel drive cars among others can experience snap oversteer when turning. Do not panic and lift off or control the throttle and countersteer to have more chances to save it from a crash</li>
+      <li>You must have to be careful not going on 4 wheels over slippery surfaces such as puddles, grass or dirt. Driving partially over these can cause the game to lose control and spin out</li>
       <li>The vehicle’s body trembling when full steering into the corner. It might have to do with the spring simulation</li>
       <li>The car making a weird turn when using the handbrake at very high speeds. It’s rather intended to be used at lower speeds for quick 90 degree turns, keep it in mind</li>
       <li>The rims twitching even when the car is stopped after being spiked</li>
