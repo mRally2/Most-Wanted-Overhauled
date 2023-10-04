@@ -6,11 +6,13 @@
       
 Having a new handling model based on grip instead provides a way more natural feel to all cars that have been tuned originally by the old Criterion team with care and detail. Not to mention the great game engine Chameleon is which made it way ahead of its time. Driving in this game is so smooth the map becomes too small at times. It’s hugely recommended to drive without upgrades other than nitrous to notice and appreciate the distict aspects of each vehicle in particular.
 
-Physics were massively improved since their previous title, Hot Pursuit 2010. Looking at the footage of previous builds you could see them trying to convert the brake to drift model they had into grip but resulted in being harsh and not enjoyable to drive. Many months later into development they updated their physics code making it much more complex which you can now have a glimps with the changes I made and appreciate how good it is. It looks as if it was straight out of a more serious racing title which was in fact my goal.
+Physics were massively improved since their previous title, Hot Pursuit 2010. Looking at the footage of previous builds you could see them trying to convert the brake to drift model they had into grip but resulted in being harsh and not enjoyable to drive. Many months later into development they updated their physics code making it much more complex which you can now have a glimps of with the changes I made and experience yourself how good it is. Looks as if it was straight out of a more serious racing title.
 
-The majority of changes that have been done to accomplish this grip model are related to the steering components and a few to the handbrake behavior. It’s also worth mentioning the fact they gave each car by default a low steering rate at high speeds with no apparent reason which creates the feeling of having a huge imput lag. This mod solves this issue increasing this value by almost 5 times.
+The majority of changes that have been done to accomplish this grip model are related to the steering components and a few to the handbrake behavior. It’s also worth mentioning the fact they gave each car by default a low steering rate at high speeds for no apparent reason which creates the feeling of having a huge imput lag. This mod solves this issue increasing this value by almost 5 times.
 
-Handbrake has also quite a big part in making this model shine. It has been tuned to be enabled shortly to trigger the drift component Criterion programmed for smooth transitions and manouvrability through tight corners and also has been set to decrease the speed of the vehicle during the powerslide instead of the other way around used for the vanilla drift model.
+Handbrake has also quite a big part in making this model shine. It has been tuned to be enabled shortly to trigger the drift component Criterion programmed for smooth transitions and manouvrability through tight corners and also has been set to decrease the speed of the vehicle during the powerslide instead of the other way around used for the vanilla drift model. This way gripping and drifting through a corner will not have much difference in speed.
+
+As a personal opinion, I wish they kept this physics code for much longer than 2 titles. Rivals was the last game to use it which also brings the fact that with very few changes you can also turn its handling model into grip. This is probably the last good physics code NFS will have for a long time...
 
 Vehicle health now has a huge importance in gameplay making you look after it each pursuit you engage. Get your car wrecked and you will not only get busted but get SP subtracted from your total amount too so watch out. When having less than 50% of health, a red outskirt corona will fade in and out depending on the severity of the damage to indicate you to survive and look for the closest gas station available to repair your ride.
 
@@ -75,7 +77,8 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <ul>
       <li>Enabling any of the two new cam presets before the Vantage S entry cutscene of WELCOME TO FAIRHAVEN will softlock the game later on when trying to switch to the Carrera S</li>
       <li>There’s a very low chance of getting softlocked after the busting process is over if you lose all health by hitting a SWAT van roadblock. Start a MW race to get out of it</li>
-      <li>The vehicle’s body trembling when full steering into the corner. Might have to do with the spring simulation</li>
+      <li>Rear wheel drive cars among others can experience snap oversteer when turning. Do not panic and lift off or control the throttle and countersteer to have more chances to save it from a crash</li>
+      <li>The vehicle’s body trembling when full steering into the corner. It might have to do with the spring simulation</li>
       <li>The car making a weird turn when using the handbrake at very high speeds. It’s rather intended to be used at lower speeds for quick 90 degree turns, keep it in mind</li>
       <li>The rims twitching even when the car is stopped after being spiked</li>
       <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
