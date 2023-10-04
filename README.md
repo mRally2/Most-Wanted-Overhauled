@@ -89,7 +89,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>The rims twitching even when the car is stopped after being spiked</li>
       <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
       <li>Some races might be too easy or too hard. Don’t expect to finish first all the time</li>
-      <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
+      <li>Cop cars might not have their paint changed if they were part of an opening cutscene</li>
       <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
       <li>Because of how Cheat Engine trainers work, if you close its window you will still have all scripts that got enabled in the first place. In order to disable them all, you must do it manually by killing all instances of the trainer in the Task Manager</li>
    </ul>
