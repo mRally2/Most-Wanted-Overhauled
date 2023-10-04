@@ -32,7 +32,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Brand new bounty requirements for MW racers to improve the sense of progression</li>
       <li>Getting busted now decreses your total SP bounty</li>
       <li>Introducing a functional vehicle health damage system giving cop chases an edge</li>
-      <li>Bumpers and fenders will fall off when damaged severely</li>
+      <li>Rear and front bumpers will fall off when damaged severely</li>
       <li>Both racer and cop AI will become vulnerable to spike strips</li>
       <li>New driving behavior when running over rims after spiked providing a more profound sense of damage</li>
       <li>Gas stations will be open every 5 minutes for use so the new damage system can have more importance aswell as finding a cooldown spot</li>
@@ -49,7 +49,8 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>A vehicle lights toggle which gives you total control of them</li>
       <li>A main paint freezer that prevents the colour of the vehicle to change when going through gas stations</li>
       <li>A paint stealer that can freeze the values of one vehicle and write them into another</li>
-      <li>Enhanced vehicle engine sounds</li>
+      <li>Enhanced vehicle engine sounds used by AI available for the player’s car</li>
+      <li>Your vehicle will not be easily vulnerable to traffic crashes or taken down by AI cops and racers</li>
    </ul>
    <p><br></p>
    <p><strong>USE</strong></p>
