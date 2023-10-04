@@ -7,18 +7,26 @@
    <p><strong>FEATURES</strong></p>
    <hr>
    <ul>
-      <li>AI opponents drive Tier 5 and Tier 6 vehicles which are constantly randomized</li>
-      <li>Gas stations have a huge variety of Tier 5 and Tier 6 vehicles to choose from</li>
-      <li>There are 20 highly customized vehicles exclusive to the player which can be driven either by hot-swapping at any gas station or by appearing as one of the choices given throughout the career</li>
-      <li>All rivals' vehicles have been changed and customized to provide a fresh look and a proper challenge when facing them in rival races</li>
-      <li>AI opponents drive Tier 5 and Tier 6 vehicles which are constantly randomized</li>
-      <li>Gas stations have a huge variety of Tier 5 and Tier 6 vehicles to choose from</li>
-      <li>There are 20 highly customized vehicles exclusive to the player which can be driven either by hot-swapping at any gas station or by appearing as one of the choices given throughout the career</li>
-      <li>All rivals' vehicles have been changed and customized to provide a fresh look and a proper challenge when facing them in rival races</li>
-      <li>AI opponents drive Tier 5 and Tier 6 vehicles which are constantly randomized</li>
-      <li>Gas stations have a huge variety of Tier 5 and Tier 6 vehicles to choose from</li>
-      <li>There are 20 highly customized vehicles exclusive to the player which can be driven either by hot-swapping at any gas station or by appearing as one of the choices given throughout the career</li>
-      <li>All rivals' vehicles have been changed and customized to provide a fresh look and a proper challenge when facing them in rival races</li>
+      <li>Introducing a handling model based on grip with a functional handbrake providing smooth powerslides</li>
+      <li>Brand new bounty requirements for MW racers</li>
+      <li>Getting busted now decreses your total SB bounty</li>
+      <li>Introducing a functional vehicle health damage system giving cop chases an edge</li>
+      <li>Bumpers and fenders will fall off when damaged severely</li>
+      <li>Both racer and cop AI will become vulnerable to spike strips</li>
+      <li>New driving behavior when running over rims providing a more profound sense of damage</li>
+      <li>Gas stations will be available to be used for repair every 5 minutes</li>
+      <li>Both racer and cop AI have been massively improved being much faster and aggressive</li>
+      <li>Roadblock randomizer</li>
+      <li>A more intense and thrill busting behaviour</li>
+      <li>Paint of every cop car has been changed to metallic black and glossy white</li>
+      <li>An image colour filter randomizer to provide more variety over many hours of playtime</li>
+      <li>A weather effect randomizer introducing unused features as Alteranatiive, Rainy or Thunder</li>
+      <li>2 brand new close cam presets</li>
+      <li>A functional speedbreaker changing the in-game time to half</li>
+      <li>A vehicle lights toggle</li>
+      <li>A main paint freezer that prevents the colour of the vehicle to change</li>
+      <li>A paint stealer that can freeze the values of one vehicle</li>
+      <li>Enhanced vehicle engine sounds</li>
    </ul>
    <p><br></p>
    <p><strong>USE</strong></p>
