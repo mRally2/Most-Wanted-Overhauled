@@ -39,7 +39,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>New driving behavior when running over rims after spiked providing a more profound sense of damage</li>
       <li>Gas stations will be open every 5 minutes for use so the new damage system can have more importance aswell as finding a cooldown spot</li>
       <li>Both racer and cop AI have been massively improved being much faster and aggressive</li>
-      <li>Both racer and cop AI are also much tougher having a 33.3% chance to be taken down</li>
+      <li>Both racer and cop AI are also much tougher having a 50% chance of being taken down</li>
       <li>Police pursuits are now harder due to the much higher speed cops can drive at any heat level, their increased spawn, radar range and backup units</li>
       <li>A roadblock randomizer which includes some of the few roadblocks that were cut</li>
       <li>A more intense and thrilling busting behaviour which enforces you to act quick to escape</li>
