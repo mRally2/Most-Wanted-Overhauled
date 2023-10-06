@@ -20,7 +20,7 @@ I’d like to point out how good they programmed AI’s behavior. You can see ho
 
 Vehicle health now has a huge importance in gameplay making you look after it each pursuit you engage. Get your car wrecked and you will not only get busted but get SP subtracted from your total amount too so watch out. When having less than 50% of health, a red aura surrounding the car on screen will fade in and out depending on the severity of the damage to indicate you to survive and look for the closest gas station available to repair your ride.
 
-The overall pursuit system have become much harder. This time around the FCPD will escalate their tactics to Hot Pursuit mode and go full force on you no matter the heat level. Good luck keeping your vehicle on the road for as long as possible. Use all your driving skills to shake them off. The racer faces a 15K SP fee when busted which gets accumulated over each heat level.
+The overall pursuit system have become much harder. This time around the FCPD will escalate their tactics to Hot Pursuit mode and go full force on you no matter the heat level. Good luck keeping your vehicle on the road for as long as possible. Use all your driving skills to shake them off.
 
 There’s a PostFX filter and Weather effect randomizer included as well. The first randomizes the RGB values from 1.0 to 0.75 in order to provide slight changes in environment colouring while the latter will randomize between having or not the following effects: wet roads, alternative lighting, rainy mood and thunder effect. The last two of these have not been used originally and the alternative lighting is almost impossible to trigger by instancing events since almost no one has it enabled.
 
@@ -83,7 +83,6 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <hr>
    <ul>
       <li>Enabling any of the two new cam presets before the Vantage S entry cutscene of WELCOME TO FAIRHAVEN will softlock the game later on when trying to switch to the Carrera S</li>
-      <li>Some opening cutscenes might be broken due to the usage of the new parameters for the grip handling model</li>
       <li>There’s a very low chance of getting softlocked after the busting process is over if you lose all health by hitting a SWAT van roadblock. Start a MW race to get out of it</li>
       <li>Rear wheel drive cars among others can experience snap oversteer when turning. Do not panic and lift off or control the throttle and countersteer to have more chances to save it from a crash</li>
       <li>You must have to be careful not going on 4 wheels over slippery surfaces such as puddles, grass or dirt. Driving partially over these can cause the game to lose control and spin out</li>
