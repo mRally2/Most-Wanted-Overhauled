@@ -145,4 +145,6 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <hr>
    <p>Support me for future releases of mods and tools for this and other games.</p>
    <p><strong><a href="https://paypal.me/mRally2" target="_blank" rel="noopener noreferrer nofollow">https://paypal.me/mRally2</a></strong></p>
+   <p></p>
+   <p>Special thanks goes to the following people who helped in one way or another to make this mod possible: Brawltendo, GoliathXR, ParkourPenguin, Enksx1, Danz, hrjohn, SwiftZC33S</p>
 </div>
