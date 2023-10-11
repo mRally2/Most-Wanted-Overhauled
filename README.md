@@ -22,6 +22,8 @@ Vehicle health now has a huge importance in gameplay making you look after it ea
 
 The overall pursuit system have become much harder. This time around the FCPD will escalate their tactics to Hot Pursuit mode and go full force on you no matter the heat level. Good luck keeping your vehicle on the road for as long as possible. Use all your driving skills to shake them off. If you get busted, the total pursuit bounty will be subtracted from your total SP balance. If you escape, depending on the heat level you did it on, you will gain all the bounty you generated on the pursuit multiplied by a bonus accordingly.
 
+The new career economy this game now has it is composed of 2 structures or modes to play to achieve the 10 million SP bounty to face the #1 Most Wanted racer and become Fairhaven’s Most Wanted. The first mode is winning every race from each car available which in total sums around 4 million SP, whereas the second mode is based in evading the cops in the revamped pursuit system which can eventually add up to the remaining 6 million SP you need for career completion. This mode has had the bounty given for entering each heat level rebalanced. Now, from heat 1 to 6 you will gain the following amount of SP: 2000, 8000, 12000, 18000, 25000 and 35000.
+
 There’s a PostFX filter and Weather effect randomizer included as well. The first randomizes the RGB values from 1.0 to 0.75 in order to provide slight changes in environment colouring while the latter will randomize between having or not the following effects: wet roads, alternative lighting, rainy mood and thunder effect. The last two of these have not been used originally and the alternative lighting is almost impossible to trigger by instancing events since almost no one has it enabled.
 
 Lastly, a functional speedbreaker reminiscent of the original Most Wanted title and which was also planned to be released as a regular weapon alongside many others that were cut has been added. Use it wisely at your own free will.
@@ -97,6 +99,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Wait a couple of minutes or so for all scripts to be enabled</li>
       <li>Set your own hotkeys for the available options</li>
       <li>Do not close the tool once in-game, let the tool work in the background as you play</li>
+      <li>Do use this trainer in conjunction with the game launched in offline mode when starting a new career because otherwise the bounty from your online progress will be overwritten into it</li>
       <li>Do not forget to turn off the in-game V-Sync as detailed <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.pcgamingwiki.com/wiki/Need_for_Speed:_Most_Wanted_(2012)#Vertical_sync_.28Vsync.29"><em>here</em></a> and then use Nvidia’s Control Panel V-Sync solution in order to have a better gameplay experience overall</li>
    </ul>
    <p><br></p>
