@@ -57,46 +57,6 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Your vehicle will not be easily vulnerable to traffic crashes or taken down by AI cops and racers</li>
    </ul>
    <p><br></p>
-   <p><strong>USE</strong></p>
-   <hr>
-   <ul>
-      <li>Open the game before using the tool</li>
-      <li>Enable it by pressing F12 preferably before the PRESS ANY KEY screen</li>
-      <li>Wait a couple of minutes or so for all scripts to be enabled</li>
-      <li>Set your own hotkeys for the available options</li>
-      <li>Do not close the tool once in-game, let the tool work in the background as you play</li>
-   </ul>
-   <p><br></p>
-   <p><strong>ESSENTIALS</strong></p>
-   <hr>
-   <ul>
-      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/2694"><em>HD Effects</em></a></li>
-      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/3416"><em>Remastered Textures</em></a></li>
-      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/4313"><em>Post-Processing FX Tweaker</em></a></li>
-      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://community.pcgamingwiki.com/files/file/2766-nfs-most-wanted-2012-realistic-plugin-v402/"><em>Realistic Plugin</em></a></li>
-      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/3971"><em>Races Added for Hidden Cars</em></a></li>
-      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/4248"><em>PhotoMode</em></a></li>
-      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/3551"><em>Beta License Plate</em></a></li>
-   </ul>
-   <p><br></p>
-   <p><strong>KNOWN ISSUES</strong></p>
-   <hr>
-   <ul>
-      <li>Enabling any of the two new cam presets before the Vantage S entry cutscene of WELCOME TO FAIRHAVEN will softlock the game later on when trying to switch to the Carrera S</li>
-      <li>There’s a very low chance of getting softlocked after the busting process is over if you lose all health by hitting a SWAT van roadblock. Start a MW race to get out of it</li>
-      <li>Rear wheel drive cars among others can experience snap oversteer when turning. Do not panic and lift off or control the throttle and countersteer to have more chances to save it from a crash</li>
-      <li>You must have to be careful not going on 4 wheels over slippery surfaces such as puddles, grass or dirt. Driving partially over these can cause the game to lose control and spin out</li>
-      <li>Watch out powershot boosting out of slow corners when in rear wheel drive cars the most as they will tend to spin out due to the huge and quick increase in torque</li>
-      <li>The vehicle’s body trembling when full steering into the corner. It might have to do with the spring simulation</li>
-      <li>The car making a weird turn when using the handbrake at very high speeds. It’s rather intended to be used at lower speeds for quick 90 degree turns, keep it in mind</li>
-      <li>The rims twitching even when the car is stopped after being spiked</li>
-      <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
-      <li>Some races might be too easy or too hard. Don’t expect to finish first all the time</li>
-      <li>Cop cars might not have their paint changed if they were part of an opening cutscene</li>
-      <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
-      <li>Because of how Cheat Engine trainers work, if you close its window you will still have all scripts that got enabled in the first place. In order to disable them all, you must do it manually by killing all instances of the trainer in the Task Manager</li>
-   </ul>
-   <p><br></p>
    <p><strong>FUTURE UPDATES</strong></p>
    <hr>
    <ul>
@@ -127,6 +87,47 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Tweak the parameters of the cop AI to make it smarter and not just more aggressive</li>
       <li>Make a complete overhaul of the in-game UI to modernize it</li>
       <li>Reinflate after certain amount of time the racer AI tires when they go over spikes to avoid slowing them down for too long</li>
+   </ul>
+   <p><br></p>
+   <p><strong>USE</strong></p>
+   <hr>
+   <ul>
+      <li>Open the game before using the tool</li>
+      <li>Enable it by pressing F12 preferably before the PRESS ANY KEY screen</li>
+      <li>Wait a couple of minutes or so for all scripts to be enabled</li>
+      <li>Set your own hotkeys for the available options</li>
+      <li>Do not close the tool once in-game, let the tool work in the background as you play</li>
+      <li>Do not forget to turn off the in-game V-Sync as detailed <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.pcgamingwiki.com/wiki/Need_for_Speed:_Most_Wanted_(2012)#Vertical_sync_.28Vsync.29"><em>here</em></a> in order to have a better gameplay experience overall</li>
+   </ul>
+   <p><br></p>
+   <p><strong>ESSENTIALS</strong></p>
+   <hr>
+   <ul>
+      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/2694"><em>HD Effects</em></a></li>
+      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/3416"><em>Remastered Textures</em></a></li>
+      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/4313"><em>Post-Processing FX Tweaker</em></a></li>
+      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://community.pcgamingwiki.com/files/file/2766-nfs-most-wanted-2012-realistic-plugin-v402/"><em>Realistic Plugin</em></a></li>
+      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/3971"><em>Races Added for Hidden Cars</em></a></li>
+      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/4248"><em>PhotoMode</em></a></li>
+      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/3551"><em>Beta License Plate</em></a></li>
+   </ul>
+   <p><br></p>
+   <p><strong>KNOWN ISSUES</strong></p>
+   <hr>
+   <ul>
+      <li>Enabling any of the two new cam presets before the Vantage S entry cutscene of WELCOME TO FAIRHAVEN will softlock the game later on when trying to switch to the Carrera S</li>
+      <li>There’s a very low chance of getting softlocked after the busting process is over if you lose all health by hitting a SWAT van roadblock. Start a MW race to get out of it</li>
+      <li>Rear wheel drive cars among others can experience snap oversteer when turning. Do not panic and lift off or control the throttle and countersteer to have more chances to save it from a crash</li>
+      <li>You must have to be careful not going on 4 wheels over slippery surfaces such as puddles, grass or dirt. Driving partially over these can cause the game to lose control and spin out</li>
+      <li>Watch out powershot boosting out of slow corners when in rear wheel drive cars the most as they will tend to spin out due to the huge and quick increase in torque</li>
+      <li>The vehicle’s body trembling when full steering into the corner. It might have to do with the spring simulation</li>
+      <li>The car making a weird turn when using the handbrake at very high speeds. It’s rather intended to be used at lower speeds for quick 90 degree turns, keep it in mind</li>
+      <li>The rims twitching even when the car is stopped after being spiked</li>
+      <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
+      <li>Some races might be too easy or too hard. Don’t expect to finish first all the time</li>
+      <li>Cop cars might not have their paint changed if they were part of an opening cutscene</li>
+      <li>The track tires not being able to be equipped due to the absurd grip values they are given</li>
+      <li>Because of how Cheat Engine trainers work, if you close its window you will still have all scripts that got enabled in the first place. In order to disable them all, you must do it manually by killing all instances of the trainer in the Task Manager</li>
    </ul>
    <p><br></p>
    <p><strong>DISCLAIMER</strong></p>
