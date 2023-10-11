@@ -97,7 +97,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Wait a couple of minutes or so for all scripts to be enabled</li>
       <li>Set your own hotkeys for the available options</li>
       <li>Do not close the tool once in-game, let the tool work in the background as you play</li>
-      <li>Do not forget to turn off the in-game V-Sync as detailed <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.pcgamingwiki.com/wiki/Need_for_Speed:_Most_Wanted_(2012)#Vertical_sync_.28Vsync.29"><em>here</em></a> in order to have a better gameplay experience overall</li>
+      <li>Do not forget to turn off the in-game V-Sync as detailed <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.pcgamingwiki.com/wiki/Need_for_Speed:_Most_Wanted_(2012)#Vertical_sync_.28Vsync.29"><em>here</em></a> and then use Nvidia’s Control Panel V-Sync solution in order to have a better gameplay experience overall</li>
    </ul>
    <p><br></p>
    <p><strong>ESSENTIALS</strong></p>
