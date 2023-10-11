@@ -100,13 +100,20 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <p><strong>FUTURE UPDATES</strong></p>
    <hr>
    <ul>
+      <li>Make a proper port of this prototype to C#/C++ for easier usage</li>
       <li>Display in-real-time the health of your vehicle and the availability of the gas station repairs on the HUD</li>
+      <li>Create a script that hides the majority of jackspots on the map to make it less usual to escape a pursuit instantly this way</li>
+      <li>Create an algorithm that increments the amount of SP of each action such as takedown or roadblock pass when in a pursuit according to the heat level the player is in</li>
+      <li>Find out how to modify Photo Mode properties such as brightness or contrast in real-time to give the visuals even more diversity</li>
+      <li>Increase the mass of traffic cars so they don’t flip easily when crashing into them</li>
+      <li>Figure out where the value for the FOV change when steering at high speed is to delete the annoying camera effect</li>
+      <li>Find out how to add brand new races to the challenge list</li>
       <li>Make other vehicle parts to fall over</li>
       <li>Find out why the cop SRT8 swapped with the SWAT van can bust you if the crash impact is severe</li>
       <li>Find out why the spikes can bust you when put a very high value</li>
       <li>Tweak the AI racers and cops to increase their keep up abilities with less rubberband involved</li>
       <li>Find out which close cam value changes the FOV of the image when turning at high speeds</li>
-      <li>Tweak the vehicle performance to make the overall driving smoother</li>
+      <li>Tweak the vehicle physics properties to make the overall driving smoother</li>
       <li>Implement for the player an exclusive EMP weapon to use against the cops taking as a basis the leftover invisible spikes</li>
       <li>Implement a randomizer that changes the items and their positions so roadblocks get more variety</li>
       <li>Change the reward SP of each career event</li>
