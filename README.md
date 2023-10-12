@@ -67,7 +67,8 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Make a proper port of this prototype to C#/C++ for easier usage</li>
       <li>Display in-real-time the health of your vehicle and the availability of the gas station repairs on the HUD</li>
       <li>Create a script that hides the majority of jackspots on the map to make it less usual to escape a pursuit instantly this way</li>
-      <li>Create an algorithm that increments the amount of SP of each action such as takedown or roadblock pass when in a pursuit according to the heat level the player is in</li>
+      <li>Create an algorithm that increments the amount of SP of each gameplay action such as racer/cop takedown or roadblock pass when in a pursuit according to the heat level the player is in</li>
+      <li>Introduce milestones reminiscent of the original game from 2005 which you must complete in order to race the Most Wanted racers and design a GUI overlay to display them on screen during pursuits</li>
       <li>Find out how to modify Photo Mode properties such as brightness or contrast in real-time to give the visuals even more diversity</li>
       <li>Increase the mass of traffic cars so they don’t flip easily when crashing into them</li>
       <li>Figure out where the value for the FOV change when steering at high speed is to delete the annoying camera effect</li>
