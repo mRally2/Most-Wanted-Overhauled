@@ -40,6 +40,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Brand new bounty requirements for MW racers to improve the sense of progression. Now it has become a race to 10 million SP points</li>
       <li>Getting busted now decreses your total SP bounty with the amount you earned throughout the chase so be aware!</li>
       <li>Introducing a functional vehicle health damage system giving cop chases an edge</li>
+      <li>Start a new career while connected to Autolog all the time without getting the SP from your previous save overwrtten breaking the progression because of it</li>
       <li>Rear and front bumpers will fall off when damaged severely</li>
       <li>Both racer and cop AI will become vulnerable to spike strips</li>
       <li>New driving behavior when running on naked rims after spiked providing a more profound sense of damage</li>
@@ -103,8 +104,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Wait a couple of minutes or so for all scripts to be enabled</li>
       <li>Set your own hotkeys for the available options</li>
       <li>Do not close the tool once in-game, let the tool work in the background as you play</li>
-      <li>Do use this trainer in conjunction with the game launched in offline mode when starting a new career because otherwise the bounty from your online progress will be overwritten into it</li>
-      <li>Do not forget to turn off the in-game V-Sync as detailed <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.pcgamingwiki.com/wiki/Need_for_Speed:_Most_Wanted_(2012)#Vertical_sync_.28Vsync.29"><em>here</em></a> and then use Nvidia’s Control Panel V-Sync solution in order to have a better gameplay experience overall</li>
+      <li>Do not forget to turn off the in-game V-Sync as detailed <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.pcgamingwiki.com/wiki/Need_for_Speed:_Most_Wanted_(2012)#Vertical_sync_.28Vsync.29"><em>here</em></a> and then use Nvidia Control Panel’s V-Sync solution in order to have a better gameplay experience overall</li>
    </ul>
    <p><br></p>
    <p><strong>ESSENTIALS</strong></p>
