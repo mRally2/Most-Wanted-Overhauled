@@ -74,19 +74,19 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Figure out where the value for the FOV change when steering at high speed is to delete the annoying camera effect</li>
       <li>Find out how to add brand new races to the challenge list</li>
       <li>Improve the soundtrack by adding brand new songs following the theme of the game</li>
-      <li>Make other vehicle parts to fall over</li>
+      <li>Make other vehicle parts to fall off when damaged severely such as bonnet, trunk, doors, lights, etc</li>
       <li>Find out why the cop SRT8 swapped with the SWAT van can bust you if the crash impact is severe</li>
-      <li>Find out why the spikes can bust you when put a very high value</li>
+      <li>Find out why the spikes can bust you when put a very high value such as 200.0 instead of 10.0</li>
       <li>Tweak the AI racers and cops to increase their keep up abilities with less rubberband involved</li>
       <li>Find out which close cam value changes the FOV of the image when turning at high speeds</li>
       <li>Tweak the vehicle physics properties to make the overall driving smoother</li>
       <li>Implement for the player an exclusive EMP weapon to use against the cops taking as a basis the leftover invisible spikes</li>
       <li>Implement a randomizer that changes the items and their positions so roadblocks get more variety</li>
       <li>Change the reward SP of each career event</li>
-      <li>Figure out a better career economy to make it even more interesting progressing through</li>
+      <li>Figure out an even better career economy to make it even more interesting progressing through</li>
       <li>Increase the durability of the AI vehicles in a more sensible manner</li>
       <li>Tweak and randomize the environment lighting parameters to provide even more visual variety</li>
-      <li>Solve the softlock that happens when you lose all the health from your car in a SWAT roadblock on a lower heat level</li>
+      <li>Solve the softlock that happens when you lose all the health from your car by crashing into a SWAT roadblock on a lower heat level than 6</li>
       <li>Implement various difficulty levels for both racer and cop AI</li>
       <li>Create a database to be able to randomize the racer AI in events</li>
       <li>Make a good port of the SCPD Reventón from HP10 and add it to the heat 5 and 6 chases as interceptor</li>
