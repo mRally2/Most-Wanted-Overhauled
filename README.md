@@ -36,26 +36,26 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <ul>
       <li>Introducing a handling model based on grip racing with a functional handbrake providing smooth powerslides</li>
       <li>Brand new bounty requirements for MW racers to improve the sense of progression</li>
-      <li>Getting busted now decreses your total SP bounty</li>
+      <li>Getting busted now decreses your total SP bounty with the amount you earned throughout the chase so be aware!</li>
       <li>Introducing a functional vehicle health damage system giving cop chases an edge</li>
       <li>Rear and front bumpers will fall off when damaged severely</li>
       <li>Both racer and cop AI will become vulnerable to spike strips</li>
-      <li>New driving behavior when running over rims after spiked providing a more profound sense of damage</li>
-      <li>Gas stations will be open every 5 minutes for use so the new damage system can have more importance aswell as finding a cooldown spot</li>
+      <li>New driving behavior when running on naked rims after spiked providing a more profound sense of damage</li>
+      <li>Gas stations will be open every 5 minutes for use so the new damage system can have more importance aswell as seeking for a cooldown spot</li>
       <li>Both racer and cop AI have been massively improved being much faster and aggressive</li>
-      <li>Both racer and cop AI are also much tougher having a 50% chance of being taken down</li>
-      <li>Police pursuits are now harder due to the much higher speed cops can drive at any heat level, their increased spawn, radar range and backup units</li>
-      <li>A roadblock randomizer which includes some of the few roadblocks that were cut</li>
+      <li>Both racer and cop AI are also much tougher having lower chances of being taken down</li>
+      <li>Police pursuits have become much harder due to the higher top speed cops can drive at in any heat level, their increased spawn rate, radar range and backup units</li>
+      <li>A roadblock randomizer which includes some of the few roadblocks that were not included</li>
       <li>A more intense and thrilling busting behaviour which enforces you to act quick to escape</li>
-      <li>Paint of every cop car has been changed to metallic black and glossy white</li>
+      <li>Paint of every cop car has been changed to metallic black and glossy white for a distinct look</li>
       <li>An image colour filter randomizer to provide more variety over many hours of playtime</li>
-      <li>A weather effect randomizer introducing cut features such as Alternative lighting, Rainy mood or Thunder effect</li>
-      <li>Two brand new close cam presets throught out for racing</li>
-      <li>A functional speedbreaker changing the in-game time to half</li>
-      <li>A vehicle lights toggle which gives you total control of them</li>
-      <li>A main paint freezer that prevents the colour of the vehicle to change when going through gas stations</li>
+      <li>A weather effect randomizer introducing cut features such as alternative lighting, rainy mood and thunder effect</li>
+      <li>Two brand new close cam presets designed to assist in cornering better</li>
+      <li>A functional speedbreaker changing the in-game time to half that can be used for many purposes so you it wisely</li>
+      <li>A vehicle lights toggle which gives you total control over their action</li>
+      <li>A main paint freezer that prevents the colour of the vehicle to change when going through gas stations to eliminate the casual aspect of this feature</li>
       <li>A paint stealer that can freeze the values of one vehicle and write them into another</li>
-      <li>Enhanced vehicle engine sounds used by AI available for the player’s car</li>
+      <li>Enhanced vehicle engine sounds used by AI available now for the player’s car too</li>
       <li>Your vehicle will not be easily vulnerable to traffic crashes or taken down by AI cops and racers</li>
    </ul>
    <p><br></p>
