@@ -115,7 +115,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/4313"><em>Post-Processing FX Tweaker</em></a></li>
       <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://community.pcgamingwiki.com/files/file/2766-nfs-most-wanted-2012-realistic-plugin-v402/"><em>Realistic Plugin</em></a></li>
       <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/3971"><em>Races Added for Hidden Cars</em></a></li>
-      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/4248"><em>PhotoMode</em></a></li>
+      <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/4248"><em>Photo Mode</em></a></li>
       <li><a target="_blank" rel="noopener noreferrer nofollow" href="https://nfsmods.xyz/mod/3551"><em>Beta License Plate</em></a></li>
    </ul>
    <p><br></p>
