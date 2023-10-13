@@ -138,6 +138,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <p><strong>DISCLAIMER</strong></p>
    <hr>
    <ul>
+      <li>This trainer prototype has been designed and tested exclusively on the legitimate copy of the game purchased from the EA App (Origin)</li>
       <li>This take of the game is thought of as an alternative to the original story mode. If you have never played it before then I suggest you do that first since the complexity you are facing in this version might discourage you to continue playing</li>
       <li>You are allowed to repost or reference this mod in any modding website that hasn’t been published on yet if and only if you follow the same design and structure used here</li>
       <li>The code design as well as any idea presented in this trainer belong in their entirety to its original author i.e _mRally2. Thus, any entity using these without previous agreement will face legal actions</li>
