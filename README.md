@@ -53,7 +53,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Paint of every cop car has been changed to metallic black and glossy white for a distinct look</li>
       <li>An image colour filter randomizer to provide more variety over many hours of playtime</li>
       <li>A weather effect randomizer introducing cut features such as alternative lighting, rainy mood and thunder effect</li>
-      <li>Two brand new close cam presets designed to assist in cornering better</li>
+      <li>Three custom made close cam presets designed to assist in cornering better and improving gameplay as a whole</li>
       <li>A functional speedbreaker changing the in-game time to half that can be used for many purposes so you it wisely</li>
       <li>A vehicle lights toggle which gives you total control over their action</li>
       <li>A main paint freezer that prevents the colour of the vehicle to change when going through gas stations to eliminate the casual aspect of this feature</li>
