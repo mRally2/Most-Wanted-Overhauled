@@ -128,6 +128,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>You must have to be careful not going on 4 wheels over slippery surfaces such as puddles, grass or dirt. Driving partially over these can cause the car to lose control and spin out with low chances of recovery</li>
       <li>Watch out when powershot boosting out of slow corners driving rear wheel drive cars the most as they will tend to spin out due to the huge and quick increase in torque</li>
       <li>When changing between custom camera presets is recommended to switch vehicle for the new parameters to apply correctly</li>
+      <li>Rihno units appearing all of sudden in the front very few meters from your position or racer AI being reset to their previous position many times a second due to the race balancing correcting the rubberband behavior</li>
       <li>The vehicle’s body trembling when full steering into the corner. It might have to do with the spring simulation</li>
       <li>The car making a weird quick turn when using the handbrake at very high speeds. It’s rather intended to be used at lower speeds for quick 90 degree turns, keep it in mind</li>
       <li>The rims twitching even when the car is stopped after being spiked</li>
