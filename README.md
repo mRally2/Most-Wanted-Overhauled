@@ -82,6 +82,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Find out which close cam value changes the FOV of the image when turning at high speeds</li>
       <li>Tweak the vehicle physics properties to make the overall driving smoother</li>
       <li>Implement for the player an exclusive EMP weapon to use against the cops taking as a basis the leftover invisible spikes</li>
+      <li>Implement for the player an exclusive Jammer weapon that closes or hides the spikes underground when enabled</li>
       <li>Implement a randomizer that changes the items and their positions so roadblocks get more variety</li>
       <li>Change the reward SP of each career event</li>
       <li>Figure out an even better career economy to make it even more interesting progressing through</li>
