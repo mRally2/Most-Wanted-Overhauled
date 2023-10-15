@@ -125,7 +125,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <ul>
       <li>Rear wheel drive cars among others can experience snap oversteer when turning. Do not panic and lift off or control the throttle and countersteer to have more chances to save it from a crash</li>
       <li>There’s a very low chance of getting softlocked after the busting process is over if you lose all health by hitting a SWAT van roadblock or some other unexpected chain of events. Start a MW race to get out of it</li>
-      <li>Even though the mod has an Autolog SP overwrite solution is highly recommended to play the game while in offline mode from the EA App (Origin)</li>
+      <li>Even though the mod has an Autolog SP overwrite solution is highly recommended to play the game while in offline mode from the EA App (Origin) for safety</li>
       <li>You must have to be careful not going on 4 wheels over slippery surfaces such as puddles, grass or dirt. Driving partially over these can cause the car to lose control and spin out with low chances of recovery</li>
       <li>Watch out when powershot boosting out of slow corners driving rear wheel drive cars the most as they will tend to spin out due to the huge and quick increase in torque</li>
       <li>When changing between custom camera presets is recommended to switch vehicle for the new parameters to apply correctly</li>
@@ -157,5 +157,5 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <p>Support me for future releases of mods and tools for this and other games.</p>
    <p><strong><a href="https://paypal.me/mRally2" target="_blank" rel="noopener noreferrer nofollow">https://paypal.me/mRally2</a></strong></p>
    <p></p>
-   <p>Special thanks goes to the following people who helped in one way or another to make this mod possible: Enksx1, Danz, Brawltendo, GoliathXR, ParkourPenguin, hrjohn, SwiftZC33S, LegSolo among many others...</p>
+   <p>Special thanks goes to the following people who helped in one way or another to make this mod possible: Enksx1, Danz, mgr.inz.Player, Brawltendo, GoliathXR, ParkourPenguin, hrjohn, SwiftZC33S, LegSolo among many others...</p>
 </div>
