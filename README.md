@@ -85,6 +85,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Implement for the player an exclusive Jammer weapon that closes or hides the spikes underground when enabled</li>
       <li>Implement a randomizer that changes the items and their positions so roadblocks get more variety</li>
       <li>Change the reward SP of each career event</li>
+      <li>Spawn the player in one of the parking spots at the Fairhaven Central Police Station after busted</li>
       <li>Figure out an even better career economy to make it even more interesting progressing through</li>
       <li>Increase the durability of the AI vehicles in a more sensible manner</li>
       <li>Tweak and randomize the environment lighting parameters to provide even more visual variety</li>
