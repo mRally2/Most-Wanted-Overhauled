@@ -84,6 +84,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
       <li>Implement for the player an exclusive EMP weapon to use against the cops taking as a basis the leftover invisible spikes</li>
       <li>Implement for the player an exclusive Jammer weapon that closes or hides the spikes underground when enabled</li>
       <li>Implement a randomizer that changes the items and their positions so roadblocks get more variety</li>
+      <li>Increase the multiplayer lobby host abilities by implementing stuff that improves quality of life such as requesting player relocation at will, making your own custom playlists, adding more events, reduce waiting times, etc</li>
       <li>Change the reward SP of each career event</li>
       <li>Spawn the player in one of the parking spots at the Fairhaven Central Police Station after busted</li>
       <li>Figure out an even better career economy to make it even more interesting progressing through</li>
