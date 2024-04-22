@@ -1,0 +1,4884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <Forms>
+    <CETrainer Class="TTrainerForm" Encoding="Ascii85">=N]f:.zkrTc7tC%;B,n?i%4-c$xIfb(O=#1G^y]lG$8DGMu{3]x51*tp;omm@e)?VugNltiPYOD;JOM+*;*-o1vb!h)pmK.3!q$(/8x1*x@=N=Qk1aYJlqdMijov*lhCQ?]OBxh4jeP;r([HA$!N@9KNT$]Gwpq}]XY)hSo?*J%Z+ra0v/@jC0MuJdhc0Se-=)luI]}3OGsKP?%BBOK+_a/TRyMA@j[+:l7ViCA3hjOj6TVd97ca^MuLa{q#j:av:(4NLu?E@::s46CyaNRf#3HBZrB=L;T0}nTva4-wW:rvU*Dz^V9S3Q4(1*m@+eHra;b(!;f(US;NSM)c}%]x0Jl;fmu=PEI%EM9V%gi9vyI,:3S5ni5Dj{Y2C7z,15V4EXN+kibH,%zuBfD@F6pUv#b+4mqW7Z{jLD*..W#-pOhI,Z-:P{{NyV%NMT/JgUu4=y+CUv4o*NCIG:x)gljshTGf+qGWUxM]i6VF*yIY)C(UrvAXXp]rF-^m9$ngeQ$fbMd:jVz!AoDa%)$P!RD%!79%a+a]%u;U6O39,htz.ZDDVjpo:TsmfX^/iHCsExrnWEed!3-eQepPPeOPeH]X9I_sVT(fjGJ?OU$.ZizyGf9:BU{)*Zl^58op9][.m#S!7n,52tL}7?neZj_qHc+t;C0lz6rDE%MrNioReOp=P.DQ%PyNje)_)tJQdb+R5_DP#14e.GV-BQPAvZh0oZ6{7wR_?e27TbB)U_c4i6Mu6vO0Hb9:@LZC2!}@%BT$TemTs!6adxUg8TS]a(V9^-WtBQJ-mheupE}i#d[Q8@a6j}#l@_I+f=a]U(?@pp:ZnB5q.9/YHIJ4JI^f#t:[kaF5j5hRW#u!H8jb:bu/zD3@b8El%=GR[6CDq8*jXS!seNLyP1sMDdh(MVp{[C2-t4+!f+Xo9k.$p7S]%C=u#)2/:%c$Sg6)[YyxlWKB635xX?5a#M:!(?CNOE+zR?LVB[7eAC/8F?i9027Ho}X2N0[X#}f-Q8mW}no+xRpM?zXc6y3^Lbh)esJOf0l*82q%G^=.J/Ag0[o=3:dGlLn:1I]dpy8(556G]dQ0GN{1/TR(,)s*SG1f1^c=QX,4@1pW(aSkmxjzz9LSVIs!uT62KAf8u?gJqMCNnX[m4_tBv6P+Mxtrp61iu^{yHgEH2qREgyY;Dx=5JTN5M*$H9m1}Pp]DR0euN%b4$Q0O@Cpc%3u)9)T#z{/1IpTMq*8{8zY4UsQ3{]9LjcD=P([vs+3A=O]dVNh@Z*o!IqXs-iqEK*_-X2omwz%o:zZBu]=FwJ{S-Bj*cK!If8{Wa)7XQi(o(05*6Oz#g!wn1Zl?Ox3Q.1*72)fp4ArAjl2zej@2E3ZP0Y[XexYn,!E3ez}M!xd8l^MGZSE9U9=[V0/x;IEd^,qH^@j*lqzQ[L.egCcKD:LO%tx)noyUIWLccdu*+8Y_h*q%EF^waS0</CETrainer>
+  </Forms>
+  <CheatEntries>
+    <CheatEntry>
+      <ID>10750</ID>
+      <Description>"MOST WANTED OVERHAULED"</Description>
+      <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+      <GroupHeader>1</GroupHeader>
+      <Hotkeys>
+        <Hotkey>
+          <Action>Activate</Action>
+          <Keys>
+            <Key>123</Key>
+          </Keys>
+          <ID>0</ID>
+        </Hotkey>
+      </Hotkeys>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>10744</ID>
+          <Description>"ESSENTIALS"</Description>
+          <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>10745</ID>
+              <Description>"MAIN SCRIPTS"</Description>
+              <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>10752</ID>
+                  <Description>"Vehicle Health &amp; Pursuit Heat"</Description>
+                  <Options moHideChildren="1"/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+alloc(heat,$500)
+registersymbol(heat)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+//0.00 - 7.99 = Heat 1
+//8.00 - 15.99 = Heat 2
+//16.00 - 23.99 = Heat 3
+//24.00 - 31.99 = Heat 4
+//32.00 - 41.99 = Heat 5
+//42.00 - 51.99 = Heat 6
+
+newmem:
+push ebx
+lea ebx,[eax+000003D8]
+mov [heat],ebx
+jmp originalcode
+
+originalcode:
+pop ebx
+movss xmm0,[eax+000003D8]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+2BDC15:
+jmp newmem
+nop 3
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+2BDC15:
+movss xmm0,[eax+000003D8]
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10753</ID>
+                      <Description>"Pursuit Heat"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Float</VariableType>
+                      <Address>heat</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10754</ID>
+                      <Description>"Busted Meter"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Float</VariableType>
+                      <Address>heat</Address>
+                      <Offsets>
+                        <Offset>1E33C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10761</ID>
+                      <Description>"IsBusted/HasEscaped"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Byte</VariableType>
+                      <Address>heat</Address>
+                      <Offsets>
+                        <Offset>1E4C9</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10762</ID>
+                      <Description>"Pursuit Bounty"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>heat</Address>
+                      <Offsets>
+                        <Offset>-A438</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10763</ID>
+                      <Description>"Player Vehicle Health"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Float</VariableType>
+                      <Address>heat</Address>
+                      <Offsets>
+                        <Offset>B0</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10764</ID>
+                      <Description>"Takedown Crashed Custcene"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Byte</VariableType>
+                      <Address>heat</Address>
+                      <Offsets>
+                        <Offset>-199</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10765</ID>
+                      <Description>"Handbrake Stop"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Byte</VariableType>
+                      <Address>heat</Address>
+                      <Offsets>
+                        <Offset>-158</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10774</ID>
+                  <Description>"Player Vehicle Control Check"</Description>
+                  <Options moHideChildren="1"/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(hasControl,4)
+registersymbol(hasControl)
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push ebx
+lea ebx,[ecx+0000018F]
+mov [hasControl],ebx
+pop ebx
+jmp originalcode
+
+originalcode:
+mov byte ptr [ecx+0000018F],01
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+1B7331:
+jmp newmem
+nop 2
+returnhere:
+
+[DISABLE]
+dealloc(*)
+"NFS13.exe"+1B7331:
+mov byte ptr [ecx+0000018F],01
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10775</ID>
+                      <Description>"hasControl"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Byte</VariableType>
+                      <Address>hasControl</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10833</ID>
+                  <Description>"Welcome to Fairhaven Check"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+math.randomseed(os.time())
+addresslist3 = getAddressList()
+CheatEntry3 = addresslist_getMemoryRecordByDescription(addresslist3,[[GAS STATION]])
+local isTODChanged = false
+local isWeatherChanged = false
+function randomFloat(lower, greater)
+    return lower + math.random()  * (greater - lower);
+end
+function welcomeFH()
+    if readPointer("[currentevent]") ~= nil then
+        if readInteger("[currentevent]") ~= 1560354 then --WELCOME TO FAIRHAVEN
+            memoryrecord_freeze(CheatEntry3) --GAS STATION ENABLED
+        else
+            memoryrecord_unfreeze(CheatEntry3) --GAS STATION DISABLED
+            if isWeatherChanged == false then
+                --CUT RAINY WEATHER
+                if math.random(1,4) == 1 then
+                    --ALTERNATIVE
+                    autoAssemble([[
+                    "NFS13.exe"+27F5F9:
+                    cmp byte ptr [eax+edi+46],01
+                    ]])
+                    --ROAD WETNESS
+                    autoAssemble([[
+                    "NFS13.exe"+27F5C2:
+                    cmp word ptr [edx+edi+40],01
+                    ]])
+                    --THUNDER
+                    autoAssemble([[
+                    0067F60A:
+                    mov byte ptr [edx+edi+44],01
+                    ]])
+                else
+                    --ALTERNATIVE
+                    if math.random(0,1) == 0 then
+                      autoAssemble([[
+                      "NFS13.exe"+27F5F9:
+                      cmp byte ptr [eax+edi+46],01
+                      ]])
+                    else
+                      autoAssemble([[
+                      "NFS13.exe"+27F5F9:
+                      cmp byte ptr [eax+edi+46],00
+                      ]])
+                    end
+                    --ROAD WETNESS
+                    if math.random(0,1) == 0 then
+                      autoAssemble([[
+                      "NFS13.exe"+27F5C2:
+                      cmp word ptr [edx+edi+40],01
+                      ]])
+                    else
+                      autoAssemble([[
+                      "NFS13.exe"+27F5C2:
+                      cmp word ptr [edx+edi+40],00
+                      ]])
+                    end
+                    --THUNDER
+                    autoAssemble([[
+                    0067F60A:
+                    cmp byte ptr [edx+edi+44],00
+                    ]])
+                end
+                isWeatherChanged = true
+           end
+           if readFloat("[pTimeOfDay]+2A84") &gt; 64799.0 and isTODChanged == false then
+               --TIME OF DAY
+               writeFloat("[pTimeOfDay]+2A84",randomFloat(0,86400))
+               isTODChanged = true
+           end
+        end
+    end
+end
+
+wFH=createTimer(nil)
+timer_setInterval(wFH, 1000)
+timer_onTimer(wFH, welcomeFH)
+timer_setEnabled(wFH, true)
+
+[DISABLE]
+wFH.destroy();
+wFH=nil
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>9357</ID>
+                  <Description>"Weapon Attributes Region"</Description>
+                  <Options moAlwaysHideChildren="1"/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(weapon,$500)
+registersymbol(weapon)
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+push ebx
+lea ebx,[ecx+edx+20]
+mov [weapon],ebx
+jmp originalcode
+
+originalcode:
+pop ebx
+movaps xmm0,[ecx+edx+20]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+2C53C1:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+2C53C1:
+movaps xmm0,[ecx+edx+20]
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10532</ID>
+                      <Description>"Weapon Cooldown"</Description>
+                      <DropDownList DisplayValueAsItem="1">2076137:HennesseyVenomGT
+2076070:McLarenF1
+2196466:ChargerRT
+2076005:VeyronVitesse
+393276:BMWM3GTR
+2076524:R34
+1399322:ChargerSRT82012
+2076339:LamboDiablo
+2076266:PaganiZonda
+2076399:Porsche911GT2
+2196000:Porsche918Spyder
+2196334:ShelbyGT500
+2076462:350Z
+2076203:AventadorJ
+2196197:FiestaST
+2196065:BMW1M
+2196131:AudiRS3
+2196399:PontiacFirebird
+1467179:MercSL65LimitEd
+1467186:Porsche911LimitEd
+1467172:MaseratiLimitEd
+1467164:FordF150LimitEd
+1467156:CaterhamLimitEd
+</DropDownList>
+                      <VariableType>Float</VariableType>
+                      <Address>nfs13.exe+00d0fd08</Address>
+                      <Offsets>
+                        <Offset>-31890</Offset>
+                        <Offset>18</Offset>
+                        <Offset>308</Offset>
+                        <Offset>50</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10533</ID>
+                      <Description>"Weapon Ammo Amount"</Description>
+                      <DropDownList DisplayValueAsItem="1">2076137:HennesseyVenomGT
+2076070:McLarenF1
+2196466:ChargerRT
+2076005:VeyronVitesse
+393276:BMWM3GTR
+2076524:R34
+1399322:ChargerSRT82012
+2076339:LamboDiablo
+2076266:PaganiZonda
+2076399:Porsche911GT2
+2196000:Porsche918Spyder
+2196334:ShelbyGT500
+2076462:350Z
+2076203:AventadorJ
+2196197:FiestaST
+2196065:BMW1M
+2196131:AudiRS3
+2196399:PontiacFirebird
+1467179:MercSL65LimitEd
+1467186:Porsche911LimitEd
+1467172:MaseratiLimitEd
+1467164:FordF150LimitEd
+1467156:CaterhamLimitEd
+</DropDownList>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>nfs13.exe+00d0fd08</Address>
+                      <Offsets>
+                        <Offset>-31758</Offset>
+                        <Offset>18</Offset>
+                        <Offset>308</Offset>
+                        <Offset>50</Offset>
+                        <Offset>8</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10517</ID>
+                      <Description>"Damage Amount Normal Spikes"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Float</VariableType>
+                      <Address>weapon</Address>
+                      <Offsets>
+                        <Offset>B8</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10471</ID>
+                          <Description>"Spawn Distance"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>-8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10520</ID>
+                          <Description>"Wreck Amount"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>C4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10519</ID>
+                          <Description>"Time Wrecking Active"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>C8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10469</ID>
+                          <Description>"Height"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>94</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10468</ID>
+                          <Description>"Width"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>90</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10467</ID>
+                          <Description>"Depth"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>98</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>9358</ID>
+                      <Description>"Damage Amount Invisible Spikes"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Float</VariableType>
+                      <Address>weapon</Address>
+                      <Offsets>
+                        <Offset>8058</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10525</ID>
+                          <Description>"Spawn Distance"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>8058-C0</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10521</ID>
+                          <Description>"Time Wrecking Active"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>8058+10</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10522</ID>
+                          <Description>"Height"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>8058-24</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10523</ID>
+                          <Description>"Width"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>8058-28</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10524</ID>
+                          <Description>"Depth"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>8058-20</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10518</ID>
+                      <Description>"Damage Amount Roadblock Spikes"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>Float</VariableType>
+                      <Address>weapon</Address>
+                      <Offsets>
+                        <Offset>74E8</Offset>
+                      </Offsets>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10526</ID>
+                          <Description>"Spawn Distance"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>74E8-C0</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10528</ID>
+                          <Description>"Time Wrecking Active"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>74E8+10</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10529</ID>
+                          <Description>"Height"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>74E8-24</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10530</ID>
+                          <Description>"Width"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>74E8-28</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10531</ID>
+                          <Description>"Depth"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>weapon</Address>
+                          <Offsets>
+                            <Offset>74E8-20</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10770</ID>
+                  <Description>"Traffic Racer Cop AI Crash Cam Check"</Description>
+                  <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+local addresslist = getAddressList()
+local CheatEntry = addresslist_getMemoryRecordByDescription(addresslist,[[Crash Cam Disable]])
+
+function checkCrashCam()
+    if readPointer("[[[[[NFS13.exe+00D0FD08]+8]+50]+308]+18]+D0") ~= nil then
+       if readInteger("[[[[[NFS13.exe+00D0FD08]+8]+50]+308]+18]+D0") == 457359 then
+          memoryrecord_freeze(CheatEntry)
+       else
+          memoryrecord_unfreeze(CheatEntry)
+       end
+    end
+end
+
+cCC=createTimer(nil)
+timer_setInterval(cCC, 1)
+timer_onTimer(cCC, checkCrashCam)
+timer_setEnabled(cCC, true)
+
+
+[DISABLE]
+
+cCC.destroy();
+cCC=nil
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10587</ID>
+                      <Description>"Crash Cam Disable"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+
+009A9FEE:
+jmp 009AA000
+
+[DISABLE]
+
+009A9FEE:
+jna 009AA000
+</AssemblerScript>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10771</ID>
+                          <Description>"Current Weapon Bundle"</Description>
+                          <DropDownList DisplayValueAsItem="1">2076137:HennesseyVenomGT
+2076070:McLarenF1
+2196466:ChargerRT
+2076005:VeyronVitesse
+393276:BMWM3GTR
+2076524:R34
+1399322:ChargerSRT82012
+2076339:LamboDiablo
+2076266:PaganiZonda
+2076399:Porsche911GT2
+2196000:Porsche918Spyder
+2196334:ShelbyGT500
+2076462:350Z
+2076203:AventadorJ
+2196197:FiestaST
+2196065:BMW1M
+2196131:AudiRS3
+2196399:PontiacFirebird
+1467179:MercSL65LimitEd
+1467186:Porsche911LimitEd
+1467172:MaseratiLimitEd
+1467164:FordF150LimitEd
+1467156:CaterhamLimitEd
+</DropDownList>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>4 Bytes</VariableType>
+                          <Address>nfs13.exe+00d0fd08</Address>
+                          <Offsets>
+                            <Offset>D0</Offset>
+                            <Offset>18</Offset>
+                            <Offset>308</Offset>
+                            <Offset>50</Offset>
+                            <Offset>8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10583</ID>
+                  <Description>"AI Vulnerable to Spikes"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+006CF1D7:
+nop
+nop
+nop
+nop
+nop
+nop
+
+[DISABLE]
+006CF1D7:
+je 006CF815
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10831</ID>
+                  <Description>"Current Easydrive Event"</Description>
+                  <Options moHideChildren="1"/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(currentevent,4)
+registersymbol(currentevent)
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push ebx
+lea ebx,[ecx+00000230]
+mov [currentevent],ebx
+pop ebx
+jmp originalcode
+
+originalcode:
+mov [ecx+00000230],eax
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+23E392:
+jmp newmem
+nop
+returnhere:
+
+[DISABLE]
+dealloc(*)
+"NFS13.exe"+23E392:
+mov [ecx+00000230],eax
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10832</ID>
+                      <Description>"Event ID"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>currentevent</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10843</ID>
+                  <Description>"Current Time of Day"</Description>
+                  <Options moHideChildren="1"/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+label(pTimeOfDay)
+registersymbol(pTimeOfDay)
+
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+
+mov [pTimeOfDay],esi
+jmp exit
+
+originalcode:
+movss [esi+00002A84],xmm0
+
+exit:
+jmp returnhere
+
+///
+pTimeOfDay:
+dd 0
+///
+
+"NFS13.exe"+4B4C28:
+jmp newmem
+nop
+nop
+nop
+returnhere:
+ 
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+4B4C28:
+movss [esi+00002A84],xmm0
+unregistersymbol(pTimeOfDay)
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10844</ID>
+                      <Description>"Current Time"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>pTimeOfDay</Address>
+                      <Offsets>
+                        <Offset>2A84</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10849</ID>
+                  <Description>"Speedbreaker Check"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+local addresslist12 = getAddressList()
+local CheatEntry12 = addresslist_getMemoryRecordByDescription(addresslist12,[[Speedbreaker]])
+
+function speedbreakerCheck()
+    if readPointer("[[[[[NFS13.exe+00D0FD08]+8]+50]+308]+18]+D0") ~= nil then
+       if readInteger("[[[[[NFS13.exe+00D0FD08]+8]+50]+308]+18]+D0") == 457359 then
+          --SINGLEPLAYER
+       else
+          --MULTIPLAYER
+          memoryrecord_unfreeze(CheatEntry12)
+       end
+    end
+end
+
+sbc=createTimer(nil)
+timer_setInterval(sbc, 1)
+timer_onTimer(sbc, speedbreakerCheck)
+timer_setEnabled(sbc, true)
+
+
+[DISABLE]
+
+sbc.destroy();
+sbc=nil
+
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10850</ID>
+                  <Description>"Main Paint Freeze Check"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+local addresslist13 = getAddressList()
+local CheatEntry13 = addresslist_getMemoryRecordByDescription(addresslist13,[[Vehicle Main Paint Freezer]])
+local isChanged = false
+function mainpaintCheck()
+    if readPointer("[gsusage]") ~= nil then
+       if readInteger("[gsusage]") == 1 and readByte("00537311") == 144 and isChanged == false then
+          --GAS STATION CLOSED
+          memoryrecord_freeze(CheatEntry13)
+          isChanged = true
+       elseif readByte("00537311") == 133 then
+          --GAS STATION OPEN
+          isChanged = false
+       end
+    end
+end
+
+mpfc=createTimer(nil)
+timer_setInterval(mpfc, 1)
+timer_onTimer(mpfc, mainpaintCheck)
+timer_setEnabled(mpfc, true)
+
+[DISABLE]
+mpfc.destroy();
+mpfc=nil
+
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10725</ID>
+                  <Description>"License Plate Name Swap"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+writeString("[[[[[NFS13.exe+00D0FD08]+8]+40]+0]+EC]+424","0VR H4UL")
+[DISABLE]
+writeString("[[[[[NFS13.exe+00D0FD08]+8]+40]+0]+EC]+424","NEED4SPD")
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10847</ID>
+              <Description>"VEHICLE"</Description>
+              <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>10723</ID>
+                  <Description>"Grip Handling Model Enable"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+function freezeStats()
+    if readPointer("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+24]+13C") ~= nil then
+        --CHECK IF VEHICLE HAS BEEN CHANGED
+        if readFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+34]+10") ~= -1.0 then
+            --Minimum_speed_to_enter_drift
+            writeFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+24]+13C",1000)
+            --Aligning_torque_effect
+            writeFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+34]+10",-1.0)
+            --High_speed
+            writeFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+34]+1C",500)
+            --High_speed_center_steer_rate
+            writeFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+34]+20",100)
+            --Minimum_handbrake_time
+            writeFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+2C]+28",0.0)
+            --High_speed_counter_steer_rate
+            writeFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+34]+24",0.0)
+            --High_speed_steer_rate
+            writeFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+34]+28",0.0)
+            --High_speed_steering_range
+            writeFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+34]+2C",100)
+            --Max_angle_steering_line_effect
+            writeFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+34]+44",0.0)
+            --Max_angle_at_high_speed_when_on_gas
+            writeFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+34]+64",0.0)
+            --Max_speed_difference_for_mantain_speed
+            writeFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+24]+3C",0.0)
+            --Reduce_forward_speed_amount
+            writeFloat("[[[[[[NFS13.exe+00CF5F48]+D0]+28]+44]+28]+24]+44",100)
+        end
+    end
+end
+
+fS=createTimer(nil)
+timer_setInterval(fS, 100)
+timer_onTimer(fS, freezeStats)
+timer_setEnabled(fS, true)
+
+[DISABLE]
+fS.destroy();
+fS=nil
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10724</ID>
+                      <Description>"Set Hotkey Handbrake [BIND ME]"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>"NFS13.exe"+00CF5F48</Address>
+                      <Offsets>
+                        <Offset>13C</Offset>
+                        <Offset>24</Offset>
+                        <Offset>28</Offset>
+                        <Offset>44</Offset>
+                        <Offset>28</Offset>
+                        <Offset>D0</Offset>
+                      </Offsets>
+                      <Hotkeys>
+                        <Hotkey OnlyWhileDown="1">
+                          <Action>Set Value</Action>
+                          <Keys>
+                            <Key>32</Key>
+                          </Keys>
+                          <Value>0</Value>
+                          <ID>0</ID>
+                        </Hotkey>
+                      </Hotkeys>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10546</ID>
+                  <Description>"Vehicle Wheel Health"</Description>
+                  <Options moAlwaysHideChildren="1"/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(wheelsspiked,4)
+registersymbol(wheelsspiked)
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push eax
+lea eax,[esi+00001A8C]
+mov [wheelsspiked],eax
+pop eax
+jmp originalcode
+
+originalcode:
+mov byte ptr [esi+00001A8C],01
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+18725F:
+jmp newmem
+nop 2
+returnhere:
+
+[DISABLE]
+dealloc(*)
+unregistersymbol(*)
+"NFS13.exe"+18725F:
+mov byte ptr [esi+00001A8C],01
+
+
+
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10547</ID>
+                      <Description>"Front Left"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>wheelsspiked</Address>
+                      <Offsets>
+                        <Offset>1C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10548</ID>
+                      <Description>"Front Right"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>wheelsspiked</Address>
+                      <Offsets>
+                        <Offset>20</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10549</ID>
+                      <Description>"Rear Left"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>wheelsspiked</Address>
+                      <Offsets>
+                        <Offset>24</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10550</ID>
+                      <Description>"Rear Right"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>wheelsspiked</Address>
+                      <Offsets>
+                        <Offset>28</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10551</ID>
+                      <Description>"Front Left Wheel"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>NFS13.exe+00CEDB00</Address>
+                      <Offsets>
+                        <Offset>9CC</Offset>
+                        <Offset>294</Offset>
+                        <Offset>4</Offset>
+                        <Offset>84</Offset>
+                        <Offset>730</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10552</ID>
+                      <Description>"Front Right Wheel"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>NFS13.exe+00CEDB00</Address>
+                      <Offsets>
+                        <Offset>B9C</Offset>
+                        <Offset>294</Offset>
+                        <Offset>4</Offset>
+                        <Offset>84</Offset>
+                        <Offset>730</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10553</ID>
+                      <Description>"Rear Left Wheel"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>NFS13.exe+00CEDB00</Address>
+                      <Offsets>
+                        <Offset>D6C</Offset>
+                        <Offset>294</Offset>
+                        <Offset>4</Offset>
+                        <Offset>84</Offset>
+                        <Offset>730</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10554</ID>
+                      <Description>"Rear Right Wheel"</Description>
+                      <VariableType>Float</VariableType>
+                      <Address>NFS13.exe+00CEDB00</Address>
+                      <Offsets>
+                        <Offset>F3C</Offset>
+                        <Offset>294</Offset>
+                        <Offset>4</Offset>
+                        <Offset>84</Offset>
+                        <Offset>730</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10545</ID>
+                  <Description>"Vehicle Spiked Behavior"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+function randomFloat(lower, greater)
+    return lower + math.random()  * (greater - lower);
+end
+function checkSpiked()
+  if readPointer("[wheelsspiked]-8") ~= nil then
+     if readInteger("[wheelsspiked]+1C") == 1 then
+        writeFloat("[[[[[NFS13.exe+00CEDB00]+730]+84]+4]+294]+9CC",randomFloat(-0.2,0.2))
+     else
+         writeFloat("[[[[[NFS13.exe+00CEDB00]+730]+84]+4]+294]+9CC",0.0)
+     end
+     if readInteger("[wheelsspiked]+20") == 1 then
+        writeFloat("[[[[[NFS13.exe+00CEDB00]+730]+84]+4]+294]+B9C",randomFloat(-0.2,0.2))
+     else
+        writeFloat("[[[[[NFS13.exe+00CEDB00]+730]+84]+4]+294]+B9C",0.0)
+     end
+     if readInteger("[wheelsspiked]+24") == 1 then
+        writeFloat("[[[[[NFS13.exe+00CEDB00]+730]+84]+4]+294]+D6C",randomFloat(-0.2,0.2))
+     else
+         writeFloat("[[[[[NFS13.exe+00CEDB00]+730]+84]+4]+294]+D6C",0.0)
+     end
+     if readInteger("[wheelsspiked]+28") == 1 then
+        writeFloat("[[[[[NFS13.exe+00CEDB00]+730]+84]+4]+294]+F3C",randomFloat(-0.2,0.2))
+     else
+         writeFloat("[[[[[NFS13.exe+00CEDB00]+730]+84]+4]+294]+F3C",0.0)
+     end
+  end
+end
+
+cS=createTimer(nil)
+timer_setInterval(cS, 100)
+timer_onTimer(cS, checkSpiked)
+timer_setEnabled(cS, true)
+
+[DISABLE]
+
+cS.destroy();
+cS=nil
+
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10541</ID>
+                  <Description>"Vehicle Health Check"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+function randomFloat(lower, greater)
+    return lower + math.random()  * (greater - lower);
+end
+function checkHealth()
+  if readPointer("[heat]+B0") ~= nil and readPointer("[heat]") ~= nil then
+    if readFloat("[heat]+B0") &lt; 0.002 then
+       writeByte("[heat]-158",1) --PLAYER GETS TOTALLED
+    else
+        writeByte("[heat]-158",0)
+    end
+  end
+end
+
+cH=createTimer(nil)
+timer_setInterval(cH, 100)
+timer_onTimer(cH, checkHealth)
+timer_setEnabled(cH, true)
+
+[DISABLE]
+
+cH.destroy();
+cH=nil
+
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10693</ID>
+                  <Description>"Vehicle Health Warner"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+local ascending = true;
+local isCritical = false;
+local baseValue = 0.4507858455
+local deltaLo = 0
+local deltaHi = 10
+--MINIMUM HEALTH WITHOUT WRECKING 0.001999974251
+function fade()
+    if readPointer("[postfx]") ~= nil and readPointer("[heat]") ~= nil then
+        if readFloat("[heat]+B0") &lt; 0.5 and readFloat("[heat]+B0") &gt; 0.35 then
+           deltaLo = 0.5
+           deltaHi = 10.0
+           isCritical = true
+        elseif readFloat("[heat]+B0") &lt; 0.35 and readFloat("[heat]+B0") &gt; 0.15 then
+           deltaLo = 1.5
+           deltaHi = 10.0
+           isCritical = true
+        elseif readFloat("[heat]+B0") &lt; 0.15 and readFloat("[heat]+B0") &gt; 0.01 then
+           deltaLo = 3.5
+           deltaHi = 10.0
+           isCritical = true
+        elseif readFloat("[heat]+B0") &lt; 0.01 then
+           deltaLo = 5.0
+           deltaHi = 10.0
+           isCritical = true
+        else
+           isCritical = false
+           writeFloat("[postfx]+30",baseValue)
+        end
+        if isCritical == true then
+            if ascending == true then
+               writeFloat("[postfx]+30",readFloat("[postfx]+30")+deltaLo*1.7183)
+            end
+            if readFloat("[postfx]+30") &gt; deltaHi then
+               ascending = false
+            end
+            if ascending == false then
+               if readFloat("[postfx]+30")-deltaLo*1.7183 &gt; 0 then
+                  writeFloat("[postfx]+30",readFloat("[postfx]+30")-deltaLo*1.7183)
+               else
+                  writeFloat("[postfx]+30",0.0)
+                  ascending = true
+               end
+            end
+        end
+    end
+end
+
+fd = createTimer(nil)
+timer_onTimer(fd,fade)
+timer_setInterval(fd, 100)
+
+[DISABLE]
+
+fd.destroy();
+fd=nil
+
+
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10776</ID>
+                  <Description>"Enhanced Vehicle Damage"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+function visualDamage()
+    if readPointer("[hasControl]") ~= nil then
+       --CHECK IF PLAYER IS IN OPENING CUTSCENE
+       if readByte("[hasControl]") == 0 then
+          autoAssemble([[
+          00FAE890:
+          dd (float)1.01
+          00FAE894:
+          dd (float)1.01
+          00FAE898:
+          dd (float)1.01
+          ]])
+       else
+          autoAssemble([[
+          00FAE890:
+          dd (float)1.00
+          00FAE894:
+          dd (float)1.00
+          00FAE898:
+          dd (float)1.00
+          ]])
+       end
+    end
+end
+
+vD=createTimer(nil)
+timer_setInterval(vD, 100)
+timer_onTimer(vD, visualDamage)
+timer_setEnabled(vD, true)
+
+
+[DISABLE]
+vD.destroy();
+vD=nil
+
+autoAssemble([[
+00FAE890:
+dd (float)1.00
+00FAE894:
+dd (float)1.00
+00FAE898:
+dd (float)1.00
+]])
+
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10837</ID>
+                  <Description>"Performance Upgrade Check"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+//BANNED DUE TO GIVING RIDICULOUS AMOUNTS OF GRIP
+cmp eax,(int)388573828 //TRACK
+je EQUIP_STOCK
+cmp eax,(int)388571360 //TRACK PRO
+je EQUIP_STOCK
+//BANNED DUE TO MAKING PURSUIT SPIKES ALMOST USELESS
+cmp eax,(int)388573552 //REINFLATES
+je EQUIP_STOCK
+cmp eax,(int)388571084 //REINFLATES PRO
+je EQUIP_STOCK
+
+originalcode:
+mov [esi+70],eax
+mov [esi+74],ebx
+jmp exit
+
+EQUIP_STOCK:
+mov [esi+70],(int)388573972
+mov [esi+74],ebx
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+285BCA:
+jmp newmem
+nop
+returnhere:
+
+[DISABLE]
+dealloc(*)
+"NFS13.exe"+285BCA:
+mov [esi+70],eax
+mov [esi+74],ebx
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10561</ID>
+                  <Description>"Vehicle Main Paint Freezer [BIND ME]"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+//Non DLC Cars
+0058BD62:
+nop
+nop
+nop
+nop
+nop
+nop
+
+//DLC Cars
+0058BCF5:
+nop
+nop
+nop
+nop
+nop
+nop
+
+[DISABLE]
+//Non DLC Cars
+0058BD62:
+mov [esi+00000164],eax
+
+//DLC Cars
+0058BCF5:
+mov [esi+00000164],eax
+</AssemblerScript>
+                  <Hotkeys>
+                    <Hotkey>
+                      <Action>Deactivate</Action>
+                      <Keys>
+                        <Key>57</Key>
+                      </Keys>
+                      <ID>0</ID>
+                    </Hotkey>
+                  </Hotkeys>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10846</ID>
+              <Description>"POST FX"</Description>
+              <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>10642</ID>
+                  <Description>"Freeroam PostFX"</Description>
+                  <Options moAlwaysHideChildren="1"/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(postfx,4)
+registersymbol(postfx)
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+cmp [ecx+10],(float)0.5
+jne originalcode
+cmp [ecx+44],3EE6CD67
+jne originalcode
+cmp [ecx+48],3EE6CD67
+jne originalcode
+push ebx
+lea ebx,[ecx+10]
+mov [postfx],ebx
+pop ebx
+jmp originalcode
+
+originalcode:
+movaps xmm0,[ecx+10]
+movaps xmm2,xmm1
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+4E2690:
+jmp newmem
+nop 2
+returnhere:
+
+[DISABLE]
+dealloc(*)
+unregistersymbol(*)
+"NFS13.exe"+4E2690:
+movaps xmm0,[ecx+10]
+movaps xmm2,xmm1
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10643</ID>
+                      <Description>"Genesys.Gen.PostFxKeyframe.Vignette"</Description>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10644</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10645</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10646</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>10</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10647</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>14</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10648</ID>
+                          <Description>"RED"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>20</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10649</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>24</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10650</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>28</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10651</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>2C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10652</ID>
+                          <Description>"RED"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>30</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10653</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>34</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10654</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>38</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10655</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>3C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10656</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>40</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10657</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>44</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10658</ID>
+                          <Description>"Fisheye Distortion"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>48</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10659</ID>
+                          <Description>"Zoom"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>4C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10660</ID>
+                          <Description>"Fisheye Convex"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>50</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10661</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>54</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10662</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>58</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10663</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>5C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10664</ID>
+                      <Description>"Genesys.Gen.PostFxKeyframe.Bloom"</Description>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10665</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>70</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10666</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>74</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10667</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>78</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10668</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>7C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10669</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>80</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10670</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>84</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10671</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>88</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10672</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>8C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10673</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>90</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10674</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>94</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10675</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>98</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10676</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>9C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10677</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>A0</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10678</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>A4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10679</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>A8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10680</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>AC</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10681</ID>
+                      <Description>"Genesys.Gen.PostFxKeyframe.General"</Description>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10682</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>C0</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10683</ID>
+                          <Description>"Extra Contrast"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>C4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10684</ID>
+                          <Description>"Motion Blur"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>C8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10685</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>CC</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10686</ID>
+                      <Description>"Genesys.Gen.PostFxKeyframe.Depth_of_Field"</Description>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10687</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>E0</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10688</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>E4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10689</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>E8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10690</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>EC</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10691</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>100</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10692</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>postfx</Address>
+                          <Offsets>
+                            <Offset>104</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10830</ID>
+                  <Description>"NOS PostFX"</Description>
+                  <Options moAlwaysHideChildren="1"/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(nospostfx,4)
+registersymbol(nospostfx)
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+cmp [ecx+20],3F59999A
+jne originalcode
+push edx
+lea edx,[ecx+10]
+mov [nospostfx],edx
+pop edx
+jmp originalcode
+
+originalcode:
+movaps xmm1,[ecx+20]
+movaps xmm2,xmm0
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+4E26BA:
+jmp newmem
+nop 2
+returnhere:
+
+[DISABLE]
+"NFS13.exe"+4E26BA:
+movaps xmm1,[ecx+20]
+movaps xmm2,xmm0
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10778</ID>
+                      <Description>"Genesys.Gen.PostFxKeyframe.Vignette"</Description>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10779</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10780</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10781</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>10</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10782</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>14</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10783</ID>
+                          <Description>"RED"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>20</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10784</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>24</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10785</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>28</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10786</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>2C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10787</ID>
+                          <Description>"RED"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>30</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10788</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>34</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10789</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>38</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10790</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>3C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10791</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>40</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10792</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>44</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10793</ID>
+                          <Description>"Fisheye Distortion"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>48</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10794</ID>
+                          <Description>"Zoom"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>4C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10795</ID>
+                          <Description>"Fisheye Convex"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>50</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10796</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>54</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10797</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>58</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10798</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>5C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10799</ID>
+                      <Description>"Genesys.Gen.PostFxKeyframe.Bloom"</Description>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10800</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>70</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10801</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>74</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10802</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>78</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10803</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>7C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10804</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>80</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10805</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>84</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10806</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>88</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10807</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>8C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10808</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>90</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10809</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>94</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10810</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>98</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10811</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>9C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10812</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>A0</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10813</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>A4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10814</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>A8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10815</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>AC</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10816</ID>
+                      <Description>"Genesys.Gen.PostFxKeyframe.General"</Description>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10817</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>C0</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10818</ID>
+                          <Description>"Extra Contrast"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>C4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10819</ID>
+                          <Description>"Motion Blur"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>C8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10820</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>CC</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10821</ID>
+                      <Description>"Genesys.Gen.PostFxKeyframe.Depth_of_Field"</Description>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10822</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>E0</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10823</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>E4</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10824</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>E8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10825</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>EC</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10826</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>100</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10827</ID>
+                          <Description>"PTR"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>nospostfx</Address>
+                          <Offsets>
+                            <Offset>104</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10772</ID>
+                  <Description>"NOS Screen Distortion Disabler"</Description>
+                  <Options moHideChildren="1"/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+cmp [ecx+60],(float)-0.178
+jne originalcode
+mov [ecx+58],(float)0
+mov [ecx+5C],(float)1.0
+mov [ecx+60],(float)0
+mov [ecx+64],(float)0.34
+jmp originalcode
+
+originalcode:
+movss xmm0,[ecx+60]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+4E2710:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(*)
+unregistersymbol(*)
+"NFS13.exe"+4E2710:
+movss xmm0,[ecx+60]
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10845</ID>
+              <Description>"BOUNTY"</Description>
+              <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>10758</ID>
+                  <Description>"Global Bounty"</Description>
+                  <Options moHideChildren="1"/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(globalbounty,4)
+registersymbol(globalbounty)
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push ebx
+lea ebx,[eax+00004B0C]
+mov [globalbounty],ebx
+pop ebx
+jmp originalcode
+
+originalcode:
+mov esi,[eax+00004B0C]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+2E398B:
+jmp newmem
+nop
+returnhere:
+
+[DISABLE]
+dealloc(*)
+"NFS13.exe"+2E398B:
+mov esi,[eax+00004B0C]
+
+
+
+
+
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10759</ID>
+                      <Description>"Current Bounty"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>globalbounty</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10760</ID>
+                      <Description>"Current Bounty HUD"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>heat</Address>
+                      <Offsets>
+                        <Offset>-A43C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10766</ID>
+                  <Description>"Bounty Checker"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+local updated = false
+local prevbounty = -1
+local bustbounty = 0
+function bountyCheck()
+  if readPointer("[globalbounty]") ~= nil and readPointer("[heat]") ~= nil then
+     --CHECK FOR NEGATIVE GLOBAL BOUNTY BALANCE
+     if readInteger("[globalbounty]") &gt; 50000000 then
+        writeInteger("[globalbounty]",0)
+     end
+
+     --WRITE GLOBAL INTO HUD
+     writeInteger("[heat]-A43C",readInteger("[globalbounty]"))
+
+     --PREPARE NEGATIVE NUMBER IF BUSTED
+     if readInteger("[heat]-A438") &gt; 0 then
+        bustbounty = readInteger("[heat]-A438")
+        bustbounty = -bustbounty
+     end
+
+     --NEW COP CHASE IS ENGAGED
+     if prevbounty ~= readInteger("[globalbounty]") and readFloat("[heat]") == 0 then
+        updated = false
+     end
+
+     --PLAYER IS BUSTED
+     if readByte("[heat]+1E4C9") == 1 and readInteger("[heat]+1E33C") == 1065353216 and updated == false then
+        prevbounty = readInteger("[globalbounty]")
+        writeInteger("[globalbounty]",readInteger("[globalbounty]")+bustbounty)
+        updated = true
+     end
+  end
+end
+
+bC=createTimer(nil)
+timer_setInterval(bC, 100)
+timer_onTimer(bC, bountyCheck)
+timer_setEnabled(bC, true)
+
+[DISABLE]
+
+bC.destroy();
+bC=nil
+
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10848</ID>
+                  <Description>"Autolog Bounty Check"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+cmp ebx,(int)1 //MP
+je exit
+cmp ebx,(int)2 //SP
+je exit
+//EBX  BOUNTY REWARD + AUTOLOG SAVE AMOUNT
+//EDX  BOUNTY TO ADD IN TOTAL
+//ESI  BOUNTY TO ADD IN TOTAL
+//EBP  BOUNTY TO ADD IN TOTAL + AUTOLOG SAVE AMOUNT
+
+originalcode:
+mov [edi+1C],esi
+call NFS13.exe+3246F0
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+326C10:
+jmp newmem
+nop 3
+returnhere:
+
+[DISABLE]
+dealloc(*)
+"NFS13.exe"+326C10:
+mov [edi+1C],esi
+call NFS13.exe+3246F0
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10842</ID>
+                  <Description>"Pursuit Heat Level Bounty Changer"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+//create variable
+alloc(h1,100)
+registersymbol(h1)
+//give it a value
+h1:
+dd (int)0
+
+//create variable
+alloc(h2,100)
+registersymbol(h2)
+//give it a value
+h2:
+dd (int)0
+
+//create variable
+alloc(h3,100)
+registersymbol(h3)
+//give it a value
+h3:
+dd (int)0
+
+//create variable
+alloc(h4,100)
+registersymbol(h4)
+//give it a value
+h4:
+dd (int)0
+
+//create variable
+alloc(h5,100)
+registersymbol(h5)
+//give it a value
+h5:
+dd (int)0
+
+//create variable
+alloc(h6,100)
+registersymbol(h6)
+//give it a value
+h6:
+dd (int)0
+
+newmem:
+cmp [eax],(int)500
+je HEAT_1
+cmp [eax],(int)1000
+je HEAT_2
+cmp [eax],(int)2500
+je HEAT_3
+cmp [eax],(int)5000
+je HEAT_4
+cmp [eax],(int)10000
+je HEAT_5
+cmp [eax],(int)20000
+je HEAT_6
+
+originalcode:
+mov edi,[eax]
+push edx
+call NFS13.exe+26A7B0
+jmp exit
+
+HEAT_1:
+cmp [h1],(int)0
+jne exit
+mov [eax],(int)2000
+mov edi,[eax]
+push edx
+call NFS13.exe+26A7B0
+mov [h1],(int)1
+jmp exit
+
+HEAT_2:
+cmp [h2],(int)0
+jne exit
+mov [eax],(int)8000
+mov edi,[eax]
+push edx
+call NFS13.exe+26A7B0
+mov [h2],(int)1
+jmp exit
+
+HEAT_3:
+cmp [h3],(int)0
+jne exit
+mov [eax],(int)12000
+mov edi,[eax]
+push edx
+call NFS13.exe+26A7B0
+mov [h3],(int)1
+jmp exit
+
+HEAT_4:
+cmp [h4],(int)0
+jne exit
+mov [eax],(int)18000
+mov edi,[eax]
+push edx
+call NFS13.exe+26A7B0
+mov [h4],(int)1
+jmp exit
+
+HEAT_5:
+cmp [h5],(int)0
+jne exit
+mov [eax],(int)25000
+mov edi,[eax]
+push edx
+call NFS13.exe+26A7B0
+mov [h5],(int)1
+jmp exit
+
+HEAT_6:
+cmp [h6],(int)0
+jne exit
+mov [eax],(int)35000
+mov edi,[eax]
+push edx
+call NFS13.exe+26A7B0
+mov [h6],(int)1
+jmp exit
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+2D0AA9:
+jmp newmem
+nop 3
+returnhere:
+
+[DISABLE]
+dealloc(*)
+unregistersymbol(*)
+"NFS13.exe"+2D0AA9:
+mov edi,[eax]
+push edx
+call NFS13.exe+26A7B0
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10768</ID>
+                  <Description>"Most Wanted List Bounty Changer"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+cmp [edx+eax+30],(int)60000
+je MW10
+cmp [edx+eax+30],(int)135000
+je MW9
+cmp [edx+eax+30],(int)220000
+je MW8
+cmp [edx+eax+30],(int)315000
+je MW7
+cmp [edx+eax+30],(int)415000
+je MW6
+cmp [edx+eax+30],(int)520000
+je MW5
+cmp [edx+eax+30],(int)630000
+je MW4
+cmp [edx+eax+30],(int)750000
+je MW3
+cmp [edx+eax+30],(int)875000
+je MW2
+cmp [edx+eax+30],(int)1000000
+je MW1
+
+originalcode:
+mov eax,[edx+eax+30]
+ret
+jmp exit
+
+MW10:
+mov [edx+eax+30],(int)150000
+mov eax,[edx+eax+30]
+ret
+MW9:
+mov [edx+eax+30],(int)450000
+mov eax,[edx+eax+30]
+ret
+MW8:
+mov [edx+eax+30],(int)815000
+mov eax,[edx+eax+30]
+ret
+MW7:
+mov [edx+eax+30],(int)1450000
+mov eax,[edx+eax+30]
+ret
+MW6:
+mov [edx+eax+30],(int)2300000
+mov eax,[edx+eax+30]
+ret
+MW5:
+mov [edx+eax+30],(int)4000000
+mov eax,[edx+eax+30]
+ret
+MW4:
+mov [edx+eax+30],(int)5700000
+mov eax,[edx+eax+30]
+ret
+MW3:
+mov [edx+eax+30],(int)7500000
+mov eax,[edx+eax+30]
+ret
+MW2:
+mov [edx+eax+30],(int)9150000
+mov eax,[edx+eax+30]
+ret
+MW1:
+mov [edx+eax+30],(int)10000000
+mov eax,[edx+eax+30]
+ret
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+2808A9:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+2808A9:
+mov eax,[edx+eax+30]
+ret
+
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10741</ID>
+              <Description>"GAS STATION"</Description>
+              <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>10738</ID>
+                  <Description>"Gas Station isUsed"</Description>
+                  <Options moHideChildren="1"/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+alloc(gsusage,4)
+registersymbol(gsusage)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push ebx
+lea ebx,[esi+eax+00000C40]
+mov [gsusage],ebx
+pop ebx
+jmp originalcode
+
+originalcode:
+mov eax,[esi+eax+00000C40]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+137303:
+jmp newmem
+nop 2
+returnhere:
+
+[DISABLE]
+dealloc(*)
+"NFS13.exe"+137303:
+mov eax,[esi+eax+00000C40]
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10739</ID>
+                      <Description>"Bool"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>gsusage</Address>
+                      <Offsets>
+                        <Offset>0</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10740</ID>
+                  <Description>"Gas Station Availability"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+local gsDisabled = false
+function checkGS()
+  if readPointer("[heat]") ~= nil and readPointer("[gsusage]") ~= nil then
+        if readFloat("[heat]+B0") &lt; 1.0 and gsDisabled == false then
+            --EMPTY
+        else
+            if readInteger("[gsusage]") == 1 then
+                --CLOSE GAS STATIONS FOR 5 MIN ONCE USED
+                autoAssemble([[
+                    00537311:
+                    nop
+                    nop
+                ]])
+                gsDisabled = true
+                cGS.Enabled = false
+                createTimer(300000,
+                function()
+                cGS.Enabled = true
+                --REOPEN GAS STATIONS
+                autoAssemble([[
+                    00537311:
+                    test eax,eax
+                ]])
+                gsDisabled = false
+                end
+                )
+            end
+        end
+    end
+end
+
+cGS=createTimer(nil)
+timer_setInterval(cGS, 1)
+timer_onTimer(cGS, checkGS)
+timer_setEnabled(cGS, true)
+
+[DISABLE]
+autoAssemble([[
+00537311:
+test eax,eax
+]])
+cGS.destroy();
+cGS=nil
+
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10747</ID>
+              <Description>"RACER"</Description>
+              <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>10586</ID>
+                  <Description>"Hardcore AI Opponents"</Description>
+                  <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+                  <GroupHeader>1</GroupHeader>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10476</ID>
+                      <Description>"Opponent AI Skill 1"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+mov [ecx+edx+10],(float)-999.0
+fmul dword ptr [ecx+edx+10]
+pop esi
+
+originalcode:
+//fmul dword ptr [ecx+edx+10]
+//pop esi
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+243024:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+243024:
+fmul dword ptr [ecx+edx+10]
+pop esi
+
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10477</ID>
+                      <Description>"Opponent AI Skill 2"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+mov [ecx+edx+14],(float)999.0
+fadd dword ptr [ecx+edx+14]
+fxch st(2)
+
+originalcode:
+//fadd dword ptr [ecx+edx+14]
+//fxch st(2)
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+24302A:
+jmp newmem
+nop
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+24302A:
+fadd dword ptr [ecx+edx+14]
+fxch st(2)
+
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10494</ID>
+                      <Description>"Opponent AI Skill 3"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+mov [edi+10],(float)250.0
+mov [edi+14],(float)100.0
+mov [edi+18],(float)0.0
+mov [edi+1C],(float)0.65
+mov [edi+20],(float)1.0
+mov [edi+24],(float)0.0
+mov [edi+28],(float)0.0
+mov [edi+2C],(float)1.0
+movss xmm1,[edi+20]
+
+originalcode:
+///movss xmm1,[edi+20]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+2430A1:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+2430A1:
+movss xmm1,[edi+20]
+
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10534</ID>
+                      <Description>"Max AI Speed"</Description>
+                      <Options moHideChildren="1"/>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+alloc(aispeed,4)
+registersymbol(aispeed)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push ebx
+lea ebx,[eax+ecx+10]
+mov [aispeed],ebx
+pop ebx
+jmp originalcode
+
+
+originalcode:
+movss xmm0,[eax+ecx+10]
+
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+243123:
+jmp newmem
+nop
+returnhere:
+
+[DISABLE]
+dealloc(*)
+unregistersymbol(aispeed)
+"NFS13.exe"+243123:
+movss xmm0,[eax+ecx+10]
+</AssemblerScript>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10535</ID>
+                          <Description>"MPH"</Description>
+                          <ShowAsSigned>0</ShowAsSigned>
+                          <VariableType>Float</VariableType>
+                          <Address>aispeed</Address>
+                          <Offsets>
+                            <Offset>0</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10746</ID>
+              <Description>"COP"</Description>
+              <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>10702</ID>
+                  <Description>"Hardcore Cop Chases"</Description>
+                  <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+                  <GroupHeader>1</GroupHeader>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10698</ID>
+                      <Description>"AI Cop VMAX"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+mov [ecx+ebp+10],(float)220.0
+fld dword ptr [ecx+ebp+10]
+mov [esp+edx*4+3C],ebx
+
+originalcode:
+//fld dword ptr [ecx+ebp+10]
+//mov [esp+edx*4+3C],ebx
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+118E90:
+jmp newmem
+nop 3
+returnhere:
+
+[DISABLE]
+dealloc(*)
+"NFS13.exe"+118E90:
+fld dword ptr [ecx+ebp+10]
+mov [esp+edx*4+3C],ebx
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10700</ID>
+                      <Description>"AI Cop Spawn Range"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+mov [edi+7C],(float)200.0 //FRONT SPAWN RANGE
+mov [edi+80],(float)100.0 //REAR SPAWN RANGE
+mov [edi+84],(float)200.0 //FRONT SPAWN RANGE
+mov [edi+88],(float)200.0 //REAR SPAWN RANGE
+mov [edi+DC],(float)200.0 //SIGHT RANGE
+mov [edi+E0],(float)100.0 //UNK
+
+fld dword ptr [edi+7C]
+pop edi
+pop esi
+
+originalcode:
+//fld dword ptr [edi+7C]
+//pop edi
+//pop esi
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+113F40:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(*)
+"NFS13.exe"+113F40:
+fld dword ptr [edi+7C]
+pop edi
+pop esi
+
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10701</ID>
+                      <Description>"AI Cop Units"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+mov [eax+ecx*4+54],(int)5
+lea eax,[eax+ecx*4+54]
+
+originalcode:
+//inc [eax+ecx*4+54]
+//lea eax,[eax+ecx*4+54]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+127015:
+jmp newmem
+nop
+nop
+nop
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+127015:
+inc [eax+ecx*4+54]
+lea eax,[eax+ecx*4+54]
+
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10706</ID>
+                      <Description>"AI Wreckage Check"</Description>
+                      <Options moHideChildren="1"/>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>{$lua}
+[ENABLE]
+math.randomseed(os.time())
+addresslist = getAddressList()
+CheatEntry = addresslist_getMemoryRecordByDescription(addresslist,[[AI isWreckable]])
+
+function checkWreckable()
+   if math.random(0,1) == 0 then
+      memoryrecord_unfreeze(CheatEntry) --AI IS WRECKABLE
+   else
+      memoryrecord_freeze(CheatEntry) --AI IS NOT WRECKABLE
+   end
+end
+
+cW=createTimer(nil)
+timer_setInterval(cW, 1500)
+timer_onTimer(cW, checkWreckable)
+timer_setEnabled(cW, true)
+
+
+[DISABLE]
+
+cW.destroy();
+cW=nil
+</AssemblerScript>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10703</ID>
+                          <Description>"AI isWreckable"</Description>
+                          <VariableType>Auto Assembler Script</VariableType>
+                          <AssemblerScript>[ENABLE]
+006BF20A:
+db B0 01 90 90 90 90 //AI NOT WRECKABLE
+[DISABLE]
+006BF20A:
+db B0 00 90 90 90 90 //AI WRECKABLE
+</AssemblerScript>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10705</ID>
+                      <Description>"AI Cop Weapon Cooldown"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+mov [edx+60],(float)60.0 //WEAPON USAGE COOLDOWN
+mov [edx+64],(float)60.0
+fld dword ptr [edx+60]
+fstp dword ptr [esi+000005A4]
+
+originalcode:
+//fld dword ptr [edx+60]
+//fstp dword ptr [esi+000005A4]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+2CFB90:
+jmp newmem
+nop 4
+returnhere:
+
+[DISABLE]
+dealloc(*)
+"NFS13.exe"+2CFB90:
+fld dword ptr [edx+60]
+fstp dword ptr [esi+000005A4]
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10584</ID>
+                      <Description>"Cop Colour Swap"</Description>
+                      <Options moHideChildren="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10502</ID>
+                          <Description>"ColorGroup1"</Description>
+                          <VariableType>Auto Assembler Script</VariableType>
+                          <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+cmp [ecx+edx+60],(float)0.001821161946
+je COP_CROWNVIC_SRT8_EXPLORER_Z06
+
+COP_CROWNVIC_SRT8_EXPLORER_Z06:
+cmp dword ptr [ecx+edx+4C],0018CF62
+je COLOR_SWAP
+cmp dword ptr [ecx+edx+4C],001099E2
+je COLOR_SWAP
+
+originalcode:
+movaps xmm0,[ecx+edx+60]
+jmp exit
+
+COLOR_SWAP:
+//METALLIC
+mov [ecx+edx+30],(float)0.005
+mov [ecx+edx+34],(float)0.005
+mov [ecx+edx+38],(float)0.005
+//METALLIC
+mov [ecx+edx+60],(float)0.005
+mov [ecx+edx+64],(float)0.005
+mov [ecx+edx+68],(float)0.005
+//GLOSS/MATTE/METALLIC FINISH
+mov [ecx+edx+7C],(float)0.25 //0.5
+mov [ecx+edx+80],(float)0.02 //0.331
+mov [ecx+edx+9C],(float)0.5 //matte 2
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+18EFDC:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+18EFDC:
+movaps xmm0,[ecx+edx+60]
+</AssemblerScript>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10506</ID>
+                          <Description>"ColorGroup2"</Description>
+                          <VariableType>Auto Assembler Script</VariableType>
+                          <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+cmp dword ptr [ecx+edx+70],0001E46F
+je COP_CROWNVIC_SRT8_EXPLORER_Z06
+
+COP_CROWNVIC_SRT8_EXPLORER_Z06:
+cmp dword ptr [ecx+edx+74],0018CF62
+je COLOR_SWAP
+cmp dword ptr [ecx+edx+74],001099E2
+je COLOR_SWAP
+
+originalcode:
+movaps xmm0,[edx+ecx+50]
+jmp exit
+
+COLOR_SWAP:
+//COLOUR 1
+mov [edx+ecx+30],(float)0.005
+mov [edx+ecx+34],(float)0.005
+mov [edx+ecx+38],(float)0.005
+//COLOUR 2
+mov [edx+ecx+60],(float)0.015
+mov [edx+ecx+64],(float)0.015
+mov [edx+ecx+68],(float)0.015
+//GLOSS/MATTE/METALLIC FINISH
+mov [ecx+edx+98],(float)0.5
+
+
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+18EF20:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+18EF20:
+movaps xmm0,[edx+ecx+50]
+</AssemblerScript>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10769</ID>
+                      <Description>"Roadblock Type Randomizer"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+{$lua}
+math.randomseed(os.time())
+function Split(s, delimiter)
+    result = {};
+    for match in (s..delimiter):gmatch("(.-)"..delimiter) do
+        table.insert(result, match);
+    end
+    return result;
+end
+function AOBtoDEC(str)
+    split_string = Split(str, " ")
+    local hex = ""
+    for i=1,#split_string do
+        hex = hex .. split_string[#split_string+1-i]
+    end
+    return(tonumber(hex,16))
+end
+
+local classA = {}
+--CROWNVIC
+classA[1]=AOBtoDEC('FE 47 00 00')
+classA[2]=AOBtoDEC('7F A6 11 00')
+classA[3]=AOBtoDEC('EE C1 17 00')
+classA[4]=AOBtoDEC('FF C1 17 00')
+classA[5]=AOBtoDEC('8F 09 15 00')
+classA[6]=AOBtoDEC('87 09 15 00')
+classA[7]=AOBtoDEC('8A 09 15 00')
+--EXPLORER
+classA[8]=AOBtoDEC('FF 47 00 00')
+classA[9]=AOBtoDEC('B4 A6 11 00')
+classA[10]=AOBtoDEC('36 8F 1C 00')
+classA[11]=AOBtoDEC('39 8F 1C 00')
+classA[12]=AOBtoDEC('97 7E 12 00')
+--Z06
+classA[13]=AOBtoDEC('CB C1 17 00')
+classA[14]=AOBtoDEC('98 7E 12 00')
+classA[15]=AOBtoDEC('9D 8D 1C 00')
+classA[16]=AOBtoDEC('9F 8D 1C 00')
+--SWAT
+classA[17]=AOBtoDEC('D7 2D 17 00')
+
+
+myTimer = createTimer()
+myTimer.Interval = 100
+myTimer.OnTimer = function()
+if readPointer("[heat]") ~= nil then
+   if readFloat("[heat]") &lt; 8.0 then
+      writeInteger('forced_drop', classA[math.random(1,7)])
+   elseif readFloat("[heat]") &lt; 26.0 then
+      writeInteger('forced_drop', classA[math.random(1,12)])
+   elseif readFloat("[heat]") &lt; 38.0 then
+      writeInteger('forced_drop', classA[math.random(1,16)])
+   else
+      local blk = math.random(0,2)
+      if blk &lt; 2 then
+         writeInteger('forced_drop', classA[math.random(1,16)])
+      else
+          writeInteger('forced_drop', classA[17])
+      end
+   end
+end
+
+end
+{$asm}
+
+alloc(forced_drop, 4)
+registersymbol(forced_drop)
+
+// timers don't run immediately - initialize this first
+forced_drop:
+  dd 2426
+
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push edi
+lea edi,[ecx+0C]
+mov edi,[forced_drop]
+mov eax,edi
+mov edx,[ebp+0C]
+pop edi
+
+originalcode:
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+1249B8:
+jmp newmem
+nop
+returnhere:
+
+[DISABLE]
+{$lua}
+if syntaxcheck then return end
+myTimer.destroy()
+myTimer = nil
+{$asm}
+dealloc(*)
+"NFS13.exe"+1249B8:
+mov eax,[ecx+0C]
+mov edx,[ebp+0C]
+
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10841</ID>
+                      <Description>"Heat Level Equalizer"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+
+originalcode:
+push ebx
+lea ebx,[esi+000003D8]
+mov [ebx],(float)0.99999 //WE SLOW DOWN THE INCREMENT SPEED
+mulss xmm0,[ebx]
+movss [esi+000003D8],xmm0
+pop ebx
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+2BDB2F:
+jmp newmem
+nop 3
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+2BDB2F:
+movss [esi+000003D8],xmm0
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10707</ID>
+                      <Description>"Faster Cop Busting"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+
+originalcode:
+push edx
+lea edx,[ebx+00000874]
+mov [edx],(float)1.0025
+mulss xmm0,[edx]
+movss [ebx+00000874],xmm0
+pop edx
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+25D04F:
+jmp newmem
+nop
+nop
+nop
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+25D04F:
+movss [ebx+00000874],xmm0
+</AssemblerScript>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10748</ID>
+          <Description>"OPTIONAL"</Description>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>10742</ID>
+              <Description>"VISUAL ENVIRONMENT"</Description>
+              <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>10726</ID>
+                  <Description>"Weather Effects Randomizer"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+[ENABLE]
+math.randomseed(os.time())
+function randomWeather()
+    --CUT RAINY WEATHER
+    if math.random(1,4) == 1 then
+        --ALTERNATIVE
+        autoAssemble([[
+        "NFS13.exe"+27F5F9:
+        cmp byte ptr [eax+edi+46],01
+        ]])
+        --ROAD WETNESS
+        autoAssemble([[
+        "NFS13.exe"+27F5C2:
+        cmp word ptr [edx+edi+40],01
+        ]])
+        --THUNDER
+        autoAssemble([[
+        0067F60A:
+        mov byte ptr [edx+edi+44],01
+        ]])
+    else
+        --ALTERNATIVE
+        if math.random(0,1) == 0 then
+          autoAssemble([[
+          "NFS13.exe"+27F5F9:
+          cmp byte ptr [eax+edi+46],01
+          ]])
+        else
+          autoAssemble([[
+          "NFS13.exe"+27F5F9:
+          cmp byte ptr [eax+edi+46],00
+          ]])
+        end
+        --ROAD WETNESS
+        if math.random(0,1) == 0 then
+          autoAssemble([[
+          "NFS13.exe"+27F5C2:
+          cmp word ptr [edx+edi+40],01
+          ]])
+        else
+          autoAssemble([[
+          "NFS13.exe"+27F5C2:
+          cmp word ptr [edx+edi+40],00
+          ]])
+        end
+        --THUNDER
+        autoAssemble([[
+        0067F60A:
+        cmp byte ptr [edx+edi+44],00
+        ]])
+    end
+end
+
+--RANDOMIZE EVERY 60 MINUTES
+rW=createTimer(nil)
+timer_setInterval(rW, 360000)
+timer_onTimer(rW, randomWeather)
+timer_setEnabled(rW, true)
+
+[DISABLE]
+rW.destroy();
+rW=nil
+autoAssemble([[
+"NFS13.exe"+27F5F9:
+cmp byte ptr [eax+edi+46],00
+]])
+autoAssemble([[
+"NFS13.exe"+27F5C2:
+cmp word ptr [edx+edi+40],01
+]])
+autoAssemble([[
+0067F5D6:
+cmp word ptr [eax+edi+40],02
+]])
+autoAssemble([[
+0067F5E8:
+cmp byte ptr [edx+edi+45],00
+]])
+autoAssemble([[
+0067F61B:
+cmp byte ptr [eax+edi+47],00
+]])
+autoAssemble([[
+0067F60A:
+cmp byte ptr [edx+edi+44],00
+]])
+
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10777</ID>
+                  <Description>"PostFX Filter Randomizer"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+math.randomseed(os.time())
+function randomFloat(lower, greater)
+    return lower + math.random()  * (greater - lower);
+end
+[ENABLE]
+local ascending = false
+local baseValue = 1.0
+local delta = 0.0001
+function colorFilter()
+  if readPointer("[postfx]") ~= nil and readPointer("[nospostfx]") ~= nil then
+     local pr = readFloat("[postfx]+20")
+     local pg = readFloat("[postfx]+24")
+     local pb = readFloat("[postfx]+28")
+     local preset = math.random(1,5)
+     if preset &gt; 3 then
+        local r = randomFloat(0.75,1.0)
+        local g = randomFloat(0.75,1.0)
+        local b = randomFloat(0.75,1.0)
+
+        if pr &gt; r then
+           while pr &gt; r do
+              pr = pr-delta
+              writeFloat("[postfx]+20",pr)
+              writeFloat("[nospostfx]+20",pr)
+           end
+        elseif pr &lt; r then
+           while pr &lt; r do
+              pr = pr+delta
+              writeFloat("[postfx]+20",pr)
+              writeFloat("[nospostfx]+20",pr)
+           end
+        else
+           writeFloat("[postfx]+20",pr)
+           writeFloat("[nospostfx]+20",pr)
+        end
+
+        if pg &gt; g then
+           while pg &gt; g do
+              pg = pg-delta
+              writeFloat("[postfx]+24",pg)
+              writeFloat("[nospostfx]+24",pg)
+           end
+        elseif pg &lt; g then
+           while pg &lt; g do
+              pg = pg+delta
+              writeFloat("[postfx]+24",pg)
+              writeFloat("[nospostfx]+24",pg)
+           end
+        else
+           writeFloat("[postfx]+24",pg)
+           writeFloat("[nospostfx]+24",pg)
+        end
+
+        if pb &gt; b then
+           while pb &gt; b do
+              pb = pb-delta
+              writeFloat("[postfx]+28",pb)
+              writeFloat("[nospostfx]+28",pb)
+           end
+        elseif pb &lt; b then
+           while pb &lt; b do
+              pb = pb+delta
+              writeFloat("[postfx]+28",pb)
+              writeFloat("[nospostfx]+28",pb)
+           end
+        else
+           writeFloat("[postfx]+28",pb)
+           writeFloat("[nospostfx]+28",pb)
+        end
+     else
+        if pr &gt; baseValue then
+           while pr &gt; baseValue do
+              pr = pr-delta
+              writeFloat("[postfx]+20",pr)
+              writeFloat("[nospostfx]+20",pr)
+           end
+        elseif pr &lt; baseValue then
+           while pr &lt; baseValue do
+              pr = pr+delta
+              writeFloat("[postfx]+20",pr)
+              writeFloat("[nospostfx]+20",pr)
+           end
+        else
+           writeFloat("[postfx]+20",pr)
+           writeFloat("[nospostfx]+20",pr)
+        end
+
+        if pg &gt; baseValue then
+           while pg &gt; baseValue do
+              pg = pg-delta
+              writeFloat("[postfx]+24",pg)
+              writeFloat("[nospostfx]+24",pg)
+           end
+        elseif pg &lt; baseValue then
+           while pg &lt; baseValue do
+              pg = pg+delta
+              writeFloat("[postfx]+24",pg)
+              writeFloat("[nospostfx]+24",pg)
+           end
+        else
+           writeFloat("[postfx]+24",pg)
+           writeFloat("[nospostfx]+24",pg)
+        end
+
+        if pb &gt; baseValue then
+           while pb &gt; baseValue do
+              pb = pb-delta
+              writeFloat("[postfx]+28",pb)
+              writeFloat("[nospostfx]+28",pb)
+           end
+        elseif pb &lt; baseValue then
+           while pb &lt; baseValue do
+              pb = pb+delta
+              writeFloat("[postfx]+28",pb)
+              writeFloat("[nospostfx]+28",pb)
+           end
+        else
+           writeFloat("[postfx]+28",pb)
+           writeFloat("[nospostfx]+28",pb)
+        end
+     end
+  end
+end
+
+--RANDOMIZE EVERY 60 MINUTES
+cF=createTimer(nil)
+timer_setInterval(cF, 360000)
+timer_onTimer(cF, colorFilter)
+timer_setEnabled(cF, true)
+[DISABLE]
+
+cF.destroy();
+cF=nil
+
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10743</ID>
+              <Description>"GAMEPLAY CAMERA"</Description>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>10727</ID>
+                  <Description>"Racing Camera Preset 1"</Description>
+                  <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+                  <GroupHeader>1</GroupHeader>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10728</ID>
+                      <Description>"CameraGameplayExternal Far Distance"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push edx
+lea edx,[ebx+34]
+mov [edx],(float)-0.2
+movss xmm0,[edx]
+pop edx
+
+originalcode:
+//movss xmm0,[ebx+34]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+1D1B5F:
+jmp newmem
+returnhere:
+
+[DISABLE]
+"NFS13.exe"+1D1B5F:
+movss xmm0,[ebx+34]
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10729</ID>
+                      <Description>"CameraGameplayExternal UpDown Shake"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push edx
+lea edx,[edi+34]
+mov [edx],(float)0.5
+mov [edx-60],(float)0.5
+movss xmm0,[edx]
+pop edx
+
+originalcode:
+//movss xmm0,[ebx+34]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+1D1558:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+1D1558:
+movss xmm0,[edi+34]
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10730</ID>
+                      <Description>"CameraGameplayExternal Stopped"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+//create variable
+alloc(var,100)
+registersymbol(var)
+//give it a value
+var:
+dd (float)0.25
+
+//create variable
+alloc(var2,100)
+registersymbol(var2)
+//give it a value
+var2:
+dd (int)0
+
+//create variable
+alloc(var3,100)
+registersymbol(var3)
+//give it a value
+var3:
+dd (int)0
+
+newmem:
+cmp [var3],esi
+jne CHANGE_VALUE
+cmp [var2],(int)1
+je originalcode
+
+CHANGE_VALUE:
+mov [var2],(int)0
+movss xmm3,[esi+edx+0000014C]
+subss xmm3,[var]
+movss [esi+edx+0000014C],xmm3
+mov [var2],(int)1
+mov [var3],esi
+
+originalcode:
+movss xmm3,[esi+edx+0000014C]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+1C6F84:
+jmp newmem
+nop 4
+returnhere:
+
+[DISABLE]
+dealloc(*)
+unregistersymbol(*)
+"NFS13.exe"+1C6F84:
+movss xmm3,[esi+edx+0000014C]
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10731</ID>
+                      <Description>"CameraGameplayExternal Moving"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+//create variable
+alloc(var3,100)
+registersymbol(var3)
+//give it a value
+var3:
+dd (float)0.15
+
+//create variable
+alloc(var4,100)
+registersymbol(var4)
+//give it a value
+var4:
+dd (int)0
+
+//create variable
+alloc(var5,100)
+registersymbol(var5)
+//give it a value
+var5:
+dd (int)0
+
+newmem:
+cmp [var5],edi
+jne CHANGE_VALUE
+cmp [var4],(int)1
+je originalcode
+
+CHANGE_VALUE:
+mov [var5],(int)0
+movss xmm1,[ebx+3C]
+subss xmm1,[var3]
+movss [ebx+3C],xmm1
+mov [var4],(int)1
+mov [var5],edi
+
+originalcode:
+movss xmm1,[ebx+3C]
+
+exit:
+jmp returnhere
+
+005D1E12:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(*)
+unregistersymbol(*)
+005D1E12:
+movss xmm1,[ebx+3C]
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10732</ID>
+                      <Description>"CameraGameplayExternal Vertical"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push edx
+lea edx,[edi+28]
+mov [edx],(float)-1
+movss xmm0,[edx]
+pop edx
+
+originalcode:
+//movss xmm0,[ebx+34]
+
+exit:
+jmp returnhere
+
+005D154A:
+jmp newmem
+returnhere:
+
+[DISABLE]
+005D154A:
+movss xmm0,[edi+28]
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10733</ID>
+                      <Description>"CameraGameplayExternal FOV"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push ebx
+lea ebx,[esi+edx+00000160]
+mov [ebx],(float)85.0
+fld dword ptr [ebx]
+pop ebx
+
+originalcode:
+//fld dword ptr [esi+edx+00000160]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+1C6F52:
+jmp newmem
+nop 2
+returnhere:
+
+[DISABLE]
+dealloc(*)
+"NFS13.exe"+1C6F52:
+fld dword ptr [esi+edx+00000160]
+
+</AssemblerScript>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10851</ID>
+                  <Description>"Racing Camera Preset 2"</Description>
+                  <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+                  <GroupHeader>1</GroupHeader>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10852</ID>
+                      <Description>"CameraGameplayExternal Far Distance"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push edx
+lea edx,[ebx+34]
+mov [edx],(float)-0.5
+movss xmm0,[edx]
+pop edx
+
+originalcode:
+//movss xmm0,[ebx+34]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+1D1B5F:
+jmp newmem
+returnhere:
+
+[DISABLE]
+"NFS13.exe"+1D1B5F:
+movss xmm0,[ebx+34]
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10853</ID>
+                      <Description>"CameraGameplayExternal UpDown Shake"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push edx
+lea edx,[edi+34]
+mov [edx],(float)0.5
+mov [edx-60],(float)0.5
+movss xmm0,[edx]
+pop edx
+
+originalcode:
+//movss xmm0,[ebx+34]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+1D1558:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+1D1558:
+movss xmm0,[edi+34]
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10854</ID>
+                      <Description>"CameraGameplayExternal Stopped"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+//create variable
+alloc(var,100)
+registersymbol(var)
+//give it a value
+var:
+dd (float)0.25
+
+//create variable
+alloc(var2,100)
+registersymbol(var2)
+//give it a value
+var2:
+dd (int)0
+
+//create variable
+alloc(var3,100)
+registersymbol(var3)
+//give it a value
+var3:
+dd (int)0
+
+newmem:
+cmp [var3],esi
+jne CHANGE_VALUE
+cmp [var2],(int)1
+je originalcode
+
+CHANGE_VALUE:
+mov [var2],(int)0
+movss xmm3,[esi+edx+0000014C]
+subss xmm3,[var]
+movss [esi+edx+0000014C],xmm3
+mov [var2],(int)1
+mov [var3],esi
+
+originalcode:
+movss xmm3,[esi+edx+0000014C]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+1C6F84:
+jmp newmem
+nop 4
+returnhere:
+
+[DISABLE]
+dealloc(*)
+unregistersymbol(*)
+"NFS13.exe"+1C6F84:
+movss xmm3,[esi+edx+0000014C]
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10855</ID>
+                      <Description>"CameraGameplayExternal Moving"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+//create variable
+alloc(var3,100)
+registersymbol(var3)
+//give it a value
+var3:
+dd (float)0.15
+
+//create variable
+alloc(var4,100)
+registersymbol(var4)
+//give it a value
+var4:
+dd (int)0
+
+//create variable
+alloc(var5,100)
+registersymbol(var5)
+//give it a value
+var5:
+dd (int)0
+
+newmem:
+cmp [var5],edi
+jne CHANGE_VALUE
+cmp [var4],(int)1
+je originalcode
+
+CHANGE_VALUE:
+mov [var5],(int)0
+movss xmm1,[ebx+3C]
+subss xmm1,[var3]
+movss [ebx+3C],xmm1
+mov [var4],(int)1
+mov [var5],edi
+
+originalcode:
+movss xmm1,[ebx+3C]
+
+exit:
+jmp returnhere
+
+005D1E12:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(*)
+unregistersymbol(*)
+005D1E12:
+movss xmm1,[ebx+3C]
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10856</ID>
+                      <Description>"CameraGameplayExternal Vertical"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push edx
+lea edx,[edi+28]
+mov [edx],(float)-1
+movss xmm0,[edx]
+pop edx
+
+originalcode:
+//movss xmm0,[ebx+34]
+
+exit:
+jmp returnhere
+
+005D154A:
+jmp newmem
+returnhere:
+
+[DISABLE]
+005D154A:
+movss xmm0,[edi+28]
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10857</ID>
+                      <Description>"CameraGameplayExternal FOV"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push ebx
+lea ebx,[esi+edx+00000160]
+mov [ebx],(float)85.0
+fld dword ptr [ebx]
+pop ebx
+
+originalcode:
+//fld dword ptr [esi+edx+00000160]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+1C6F52:
+jmp newmem
+nop 2
+returnhere:
+
+[DISABLE]
+dealloc(*)
+"NFS13.exe"+1C6F52:
+fld dword ptr [esi+edx+00000160]
+
+</AssemblerScript>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10734</ID>
+                  <Description>"Racing Camera Preset 3"</Description>
+                  <Options moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+                  <GroupHeader>1</GroupHeader>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10735</ID>
+                      <Description>"CameraGameplayExternal Far Distance"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push edx
+lea edx,[ebx+34]
+mov [edx],(float)-0.40
+movss xmm0,[edx]
+pop edx
+
+originalcode:
+//movss xmm0,[ebx+34]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+1D1B5F:
+jmp newmem
+returnhere:
+
+[DISABLE]
+"NFS13.exe"+1D1B5F:
+movss xmm0,[ebx+34]
+</AssemblerScript>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10736</ID>
+                      <Description>"CameraGameplayExternal UpDown Shake"</Description>
+                      <VariableType>Auto Assembler Script</VariableType>
+                      <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+push edx
+lea edx,[edi+34]
+mov [edx],(float)0.5
+mov [edx-60],(float)0.5
+movss xmm0,[edx]
+pop edx
+
+originalcode:
+//movss xmm0,[ebx+34]
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+1D1558:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+1D1558:
+movss xmm0,[edi+34]
+</AssemblerScript>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10749</ID>
+              <Description>"MISC"</Description>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>10559</ID>
+                  <Description>"Speedbreaker [BIND ME]"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem:
+
+originalcode:
+mov [ebp+14],(float)0.5
+
+exit:
+jmp returnhere
+
+"NFS13.exe"+269AF0:
+jmp newmem
+returnhere:
+
+[DISABLE]
+dealloc(newmem)
+"NFS13.exe"+269AF0:
+movss xmm0,[ebp+14]
+</AssemblerScript>
+                  <Hotkeys>
+                    <Hotkey OnlyWhileDown="1">
+                      <Action>Toggle Activation</Action>
+                      <Keys>
+                        <Key>90</Key>
+                      </Keys>
+                      <ID>0</ID>
+                    </Hotkey>
+                  </Hotkeys>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10560</ID>
+                  <Description>"Vehicle Lights Toggle [BIND ME]"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+
+006B918C:
+mov byte ptr [eax+74],00
+
+"NFS13.exe"+2C78C3:
+cmp byte ptr [ecx+00000281],00
+
+[DISABLE]
+
+006B918C:
+cmp byte ptr [eax+74],00
+
+"NFS13.exe"+2C78C3:
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+</AssemblerScript>
+                  <Hotkeys>
+                    <Hotkey>
+                      <Action>Toggle Activation</Action>
+                      <Keys>
+                        <Key>78</Key>
+                      </Keys>
+                      <ID>0</ID>
+                    </Hotkey>
+                  </Hotkeys>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10562</ID>
+                  <Description>"Vehicle Paint Stealer [BIND ME]"</Description>
+                  <Options moAlwaysHideChildren="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+                  <GroupHeader>1</GroupHeader>
+                  <Hotkeys>
+                    <Hotkey>
+                      <Action>Toggle Activation</Action>
+                      <Keys>
+                        <Key>48</Key>
+                      </Keys>
+                      <ID>0</ID>
+                    </Hotkey>
+                  </Hotkeys>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>10563</ID>
+                      <Description>"Car Colour 1"</Description>
+                      <Options moManualExpandCollapse="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10564</ID>
+                          <Description>"Red"</Description>
+                          <Color>0000FF</Color>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>30</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10565</ID>
+                          <Description>"Green"</Description>
+                          <Color>008000</Color>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>34</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10566</ID>
+                          <Description>"Blue"</Description>
+                          <Color>FF8000</Color>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>38</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10567</ID>
+                      <Description>"Car Colour 2 "</Description>
+                      <Options moManualExpandCollapse="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10568</ID>
+                          <Description>"Red Metallic"</Description>
+                          <Color>0000FF</Color>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>40</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10569</ID>
+                          <Description>"Blue Metallic"</Description>
+                          <Color>FF8000</Color>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>48</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10570</ID>
+                          <Description>"Green Metallic"</Description>
+                          <Color>008000</Color>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>44</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10571</ID>
+                      <Description>"Gloss / Matte Finish"</Description>
+                      <Options moManualExpandCollapse="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10572</ID>
+                          <Description>"Car Matte"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>3C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10573</ID>
+                          <Description>"Car Colour 2 Matte"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>6C</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10574</ID>
+                          <Description>"Chrome Finish"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>B8</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10575</ID>
+                          <Description>"Chrome Finish 2"</Description>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>BC</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>10576</ID>
+                      <Description>"Car Colour 2 Metallic"</Description>
+                      <Options moManualExpandCollapse="1" moActivateChildrenAsWell="1" moDeactivateChildrenAsWell="1"/>
+                      <GroupHeader>1</GroupHeader>
+                      <CheatEntries>
+                        <CheatEntry>
+                          <ID>10577</ID>
+                          <Description>"Red 3"</Description>
+                          <Color>0000FF</Color>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>60</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10578</ID>
+                          <Description>"Green 3"</Description>
+                          <Color>008000</Color>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>64</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10579</ID>
+                          <Description>"Blue 4"</Description>
+                          <Color>FF8000</Color>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>68</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10580</ID>
+                          <Description>"Red Metallic 2"</Description>
+                          <Color>0000FF</Color>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>70</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10581</ID>
+                          <Description>"Green Metallic 2"</Description>
+                          <Color>008000</Color>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>74</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                        <CheatEntry>
+                          <ID>10582</ID>
+                          <Description>"Blue Metallic 2"</Description>
+                          <Color>FF8000</Color>
+                          <VariableType>Float</VariableType>
+                          <Address>"NFS13.exe"+00CF5F48</Address>
+                          <Offsets>
+                            <Offset>78</Offset>
+                          </Offsets>
+                        </CheatEntry>
+                      </CheatEntries>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10558</ID>
+                  <Description>"Enhanced Vehicle Sounds"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+
+"NFS13.exe"+17BE31:
+push NFS13.exe+BAD474
+
+[DISABLE]
+
+"NFS13.exe"+17BE31:
+push NFS13.exe+BAD464
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>10412</ID>
+                  <Description>"PhotoMode Enable"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>{$lua}
+getLuaEngine().cbShowOnPrint.Checked=false
+getLuaEngine().hide()
+local addressStart = "0A000000"
+local addressEnd = "1F000000"
+[ENABLE]
+local HSM = "2E 53 11 00 * * * * 00 00 C0 D9 DD C3 DA 66 32 53 11 00 * * * * 52 75 6E 20 50 61 67 65 52 75 6E 6E 65 72 32 20 43 6F 6E 74 65 78 74 20 2D 20 50 61 75 73 65 4D 65 6E 75 53 63 72 65 65 6E 00 45 78 69 74 20 57 68 65 6E 20 50 61 75 73 65 20 4D 65 6E 75 20 44 69 73 61 62 6C 65 64 00"
+local MyMemscan = createMemScan()
+memscan_returnOnlyOneResult(MyMemscan, true)
+memscan_firstScan(MyMemscan,soExactValue,vtByteArray,0,HSM,"",addressStart,addressEnd,"*X*W*C",0,"",true,true,false,false)
+memscan_waitTillDone(MyMemscan)
+local address = memscan_getOnlyResult(MyMemscan)
+writeInteger(address,1135414) --Photomode Menu ID 36 53 11 00
+[DISABLE]
+local HSM = "36 53 11 00 * * * * 00 00 C0 D9 DD C3 DA 66 32 53 11 00 * * * * 52 75 6E 20 50 61 67 65 52 75 6E 6E 65 72 32 20 43 6F 6E 74 65 78 74 20 2D 20 50 61 75 73 65 4D 65 6E 75 53 63 72 65 65 6E 00 45 78 69 74 20 57 68 65 6E 20 50 61 75 73 65 20 4D 65 6E 75 20 44 69 73 61 62 6C 65 64 00"
+local MyMemscan = createMemScan()
+memscan_returnOnlyOneResult(MyMemscan, true)
+memscan_firstScan(MyMemscan,soExactValue,vtByteArray,0,HSM,"",addressStart,addressEnd,"*X*W*C",0,"",true,true,false,false)
+memscan_waitTillDone(MyMemscan)
+local address = memscan_getOnlyResult(MyMemscan)
+writeInteger(address,1135406) --Pause Menu Screen ID 2E 53 11 00
+
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
