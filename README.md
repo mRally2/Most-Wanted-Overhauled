@@ -30,7 +30,6 @@ There’s a PostFX filter and Weather effect randomizer included as well. The fi
 
 Lastly, a functional speedbreaker reminiscent of the original Most Wanted title and which was also planned to be released as a regular weapon alongside many others that were cut has been added. Use it wisely at your own free will.
 
-<strong>[ RELEASE DATE: UNDECIDED, DEPENDS ON THE DEMAND AND SUPPORT ]</strong>
 </p>
    <p><br></p>
    <p><strong>FEATURES</strong></p>
@@ -158,5 +157,5 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <hr>
    <p><strong><a href="https://paypal.me/mRally2" target="_blank" rel="noopener noreferrer nofollow">Support me</a></strong> for future releases of mods and tools for this and other games. Check out my releases on NFSMods too</p>
    <p></p>
-   <p>Special thanks goes to the following people who helped in one way or another to make this mod possible: Enksx1, SwiftZC33S, Danz, AylinCE, mgr.inz.Player, Brawltendo, GoliathXR, ParkourPenguin, hrjohn, LegSolo among many others...</p>
+   <p>Special thanks goes to the following people who helped in one way or another to make this mod possible: Enksx1, SwiftZC33S, Danz, burninrubber0, AylinCE, mgr.inz.Player, Brawltendo, GoliathXR, ParkourPenguin, hrjohn, LegSolo among many others...</p>
 </div>
