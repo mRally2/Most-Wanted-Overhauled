@@ -101,10 +101,11 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <p><strong>USE</strong></p>
    <hr>
    <ul>
-      <li>Open the game before using the tool</li>
+      <li>Open the game before using the tool (Cheat Engine)</li>
+      <li>Open CE then go to File/Load and select the cheat table available in the Code section</li>
       <li>Enable it by pressing F12 preferably before the PRESS ANY KEY screen</li>
       <li>Wait a couple of minutes or so for all scripts to be enabled</li>
-      <li>Set your own hotkeys for the available options</li>
+      <li>Set your own hotkeys for the entries marked as [BIND ME]</li>
       <li>Do not close the tool once in-game, let the tool work in the background as you play</li>
       <li>Do not forget to turn off the in-game V-Sync as detailed <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.pcgamingwiki.com/wiki/Need_for_Speed:_Most_Wanted_(2012)#Vertical_sync_.28Vsync.29"><em>here</em></a> and then use Nvidia Control Panel’s V-Sync solution in order to have a better gameplay experience overall</li>
    </ul>
@@ -144,6 +145,8 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <hr>
    <ul>
       <li>This trainer prototype has been designed and tested exclusively on the legitimate copy of the game purchased from the EA App (Origin)</li>
+      <li>It is highly recommended to play it with KEYBOARD as it has the least bugs when it comes to vehicle steering compared to CONTROLLER</li>
+      <li>It is also highly recommended to play it OFFLINE especially if you are planning to start a new save otherwise the bounty will not get reset</li>
       <li>This take of the game is thought of as an alternative to the original story mode. If you have never played it before then I suggest you do that first since the complexity you are facing in this version might discourage you to continue playing</li>
       <li>You are allowed to repost or reference this mod in any modding website that hasn’t been published on yet if and only if you follow the same design and structure used here</li>
       <li>The code design as well as any idea presented in this page belong in their entirety to its original author i.e _mRally2. Thus, any entity using these without previous agreement will face legal actions</li>
