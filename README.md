@@ -102,6 +102,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <hr>
    <ul>
       <li>Open the game before using the tool (Cheat Engine)</li>
+      <li>Click on the computer icon below File and select the game executable in order to attach CE to it</li>
       <li>Open CE then go to File/Load and select the cheat table available in the Code section</li>
       <li>Enable it by pressing F12 preferably before the PRESS ANY KEY screen</li>
       <li>Wait a couple of minutes or so for all scripts to be enabled</li>
