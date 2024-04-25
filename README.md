@@ -126,6 +126,7 @@ Lastly, a functional speedbreaker reminiscent of the original Most Wanted title 
    <p><strong>KNOWN ISSUES</strong></p>
    <hr>
    <ul>
+      <li>Controller users will experience steering input to be locked on one side due to unknown reasons. Perhaps is a bug caused by increasing the steering speed/sensitivity or any other parameters I modified myself in order to develop my custom handling (hypothesis)</li>
       <li>Rear wheel drive cars among others can experience snap oversteer when turning. Do not panic and lift off or control the throttle and countersteer to have more chances to save it from a crash</li>
       <li>There’s a very low chance of getting softlocked after the busting process is over if you lose all health by hitting a SWAT van roadblock or some other unexpected chain of events. Start a MW race to get out of it</li>
       <li>Even though the mod has an Autolog SP overwrite solution is highly recommended to play the game while in offline mode from the EA App (Origin) for safety</li>
